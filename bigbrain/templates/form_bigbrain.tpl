@@ -1,12 +1,9 @@
-
 {literal}
 <script src="js/jquery/jQuery.base64.js"></script>
 <script type="text/javascript" src="js/jquery/jquery.mousewheel.min.js"></script>
-<html width="100%">
 <h1 class="title">
 BigBrain
 </h1>
-<body width="100%">
 
 <table width='100%'>
     <tr>
@@ -14,10 +11,6 @@ BigBrain
         <p><font size='2'><b>The BigBrain dataset</b> is the result of a collaborative effort between the teams of <A HREF="http://www.fz-juelich.de/portal/EN/AboutUs/Institutes_Facilities/Institutes/InstituteNeuroscienceMedicine/_node.html">Dr. Katrin Amunts and Dr. Karl Zilles</A> (<A HREF="http://www.fz-juelich.de/portal/EN/Home/home_node.html">Forschungszentrum J&uuml;lich)</A> and <A HREF="https://cbrain.mcgill.ca/">Dr. Alan Evans</A> (<A HREF="http://www.mni.mcgill.ca/">Montreal Neurological Institute</A>). For research purposes only, no commercial use without written consent.
 
 	</font></p>
-<!--<p>Please note: if you do not see the two panes side-by-side, please increase the size of your browser window or zoom out in the browser's "View" menu.  
-<p> To browse through the BigBrain, click and move the orange line across the image in the left pane. Depending on the speed of your connection, it might take a few seconds for the right pane image to fully load. 
-In the right pane, use the mouse's wheel (up/down arrows and a/z keys are alternatives) to zoom in and out of the section, left click and move to explore different section regions at higher resolution. Section numbers are displayed below. 
-To download the full resolution histological MINC or PNG file of a selected section, click on the download link below the viewer. To see more detailed slice information and for quality control capabilities, please click on the <a href='mri_browser.php?'>Imaging Browser </a>link.-->
 	</td>
     </tr>
 </table>
@@ -36,8 +29,6 @@ To download the full resolution histological MINC or PNG file of a selected sect
         <div id="navigation">
 	    <button type="button" name="button" class="button" id="prevslice">Previous Section</button>
 	    <button type="button" name="button" class="button" id="nextslice">Next Section</button>
-<!--            <a href="" id="prevslice">Previous Section</a>  
-            <a href="" id="nextslice">Next Section</a>--> 
             <span id="loading">&nbsp;</span>
 	    <div>&nbsp;</div>
         </div>
@@ -55,43 +46,8 @@ To download the full resolution histological MINC or PNG file of a selected sect
             <p id="sliceData"></p>
 	</div>
     </div>
-<!--
-    <table style="margin-left: 20px; margin-top: 480px; margin-bottom: 50px; border-radius:4px; position:absolute; -webkit-border-radius:4px; -moz-border-radius:4px;">
-        <tr>
-            <th width='140px'>Section number</th>
-            <th width='160px'>Resolution</th>
-            <th width='400px'>Download</th>
-            <th width='200px'>View</th>
-        </tr>
-        <tr bgcolor='#FFFFFF'>
-            <td class="sliceId" align='center'>&nbsp; </td>
-            <td align='center'>20 microns in plane</td>
-            <td id="sliceData" align='center'></td>
-            <td id="sliceViewLink" align="center"></td>
-        </tr>
-        <tr>
-	<tr>
-            <td width='100px' align='left'><b>Section number:</b></td>
-            <td width='140px' class="sliceId" align='left'>&nbsp;</td>
-	</tr>
-	<tr>
-            <td align='left'><b>Resolution:</b></td>
-            <td align='left'>20 microns in plane</td>
-	</tr>
-	<tr>
-            <td colspan='2' id="sliceData"></td>
-	</tr>
-    </table>-->
 </div>
-<!--
-        <div id="navigation">
-	    <button type="button" name="button" class="button" id="prevslice">Previous Section</button>
-	    <button type="button" name="button" class="button" id="nextslice">Next Section</button>
-            <a href="" id="prevslice">Previous Section</a>  
-            <a href="" id="nextslice">Next Section</a> 
-            <span id="loading">&nbsp;</span>
-        </div>
--->
+
 <!-- Script -->
 <script>
 $(function() {
@@ -117,6 +73,4 @@ $(function() {
         <a href="/papers/HBM2010poster.pdf">Lepage, C. et al.:<i> Automatic Repair of Acquisition Defects in Reconstruction of Histology Sections of a Human Brain</i>, HBM 2010</a>
     </p>
 </div>
-</body>
-</html>
 {/literal}
