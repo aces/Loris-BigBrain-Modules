@@ -124,11 +124,11 @@ var BigBrain = BigBrain || {};
                     cSlice.addEventListener('load', function() {
                         load.textContent = '';
                     });
-                    cSlice.src = "/get_slice_full.php?sliceID=" + cSlice.sliceId;
+                    cSlice.src = "AjaxHelper.php?Module=bigbrain&script=get_slice_full.php?sliceID=" + cSlice.sliceId;
                 }
             };
             if(currentSlice.sliceId > 0 && currentSlice.sliceId <= numSlices) {
-                $.get('/get_slice_full.php', { sliceID: currentSlice.sliceId }, closure(currentSlice, slicectx, sliceCanvas));
+                $.get('/AjaxHelper.php?Module=bigbrain&script=get_slice_full.php', { sliceID: currentSlice.sliceId }, closure(currentSlice, slicectx, sliceCanvas));
             }
         });
         var oldpos = [];
@@ -373,7 +373,7 @@ var BigBrain = BigBrain || {};
      num = parseInt(num, 10);
      var nextSlice, prevSlice;
      var data = $("#sliceData");
-     data.html(" <span style=\"font-weight: bold\"><a href=\"/get_slice.php?sliceID=" + num + "\">Download histology MNC</a></span></br></br><span style=\"font-weight: bold\"><a href=\"/get_slice_full.php?sliceID=" + num + "\">Download histology PNG</a></span>"); 
+     data.html(" <span style=\"font-weight: bold\"><a href=\"/AjaxHelper.php?Module=bigbrain&script=get_slice.php?sliceID=" + num + "\">Download histology MNC</a></span></br></br><span style=\"font-weight: bold\"><a href=\"/AjaxHelper.php?Module=bigbrain&script=get_slice_full.php?sliceID=" + num + "\">Download histology PNG</a></span>"); 
 
 //     data = $("#sliceViewLink");
 //     data.html("<span style=\"font-weight: bold\"><a href=\"/mri_browser.php?sessionID=" + num + "\">View in Imaging Browser</a></span>");
