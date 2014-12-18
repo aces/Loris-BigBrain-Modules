@@ -5,9 +5,9 @@
 </p>
 </b>
 
-<table class="dynamictable fancytable bigbraintable" border="0" width="100%">
+<table class="dynamictable table table-hover table-primary table-bordered" border="0" width="100%">
     <thead>
-        <tr>
+        <tr class="info">
             <th>Description</th>
             <th>Resolution</th>
             <th>Encoding</th>
@@ -16,7 +16,7 @@
             <th>View</th>
             <th>Download</th>
        </tr>
-        <tr>
+        <tr class="info">
             <th colspan="8" >MNI ICBM 152 Space (ICBM 2009b Nonlinear Symmetric)</th>
        </tr>
    </thead>
@@ -33,7 +33,7 @@
            <td class="view">
            <a href="https://bigbrain.loris.ca/get_volume.php?file=full16_100um_2009b_sym.mnc">Minc</a>
            </td>
-           <td class="download"></td>
+           {*<td class="download"></td>*}
        </tr>
        <tr>
            <td class="description">Full volume, 200um</td>
@@ -233,7 +233,7 @@
        </td>
         <td class="download"><a href="https://bigbrain.loris.ca/get_volume.php?file=mni_icbm152_t1_tal_nlin_sym_09b_hires.mnc">Minc</a></td>
    </tr>
-    <tr>
+    <tr class="info">
         <th colspan="8">7T syn24 template in MNI Space</th>
    </tr>
     <tr>
@@ -289,7 +289,7 @@
            <a href="https://bigbrain.loris.ca/get_volume.php?file=syn24-average-t1map-lvl2-10.nii.gz">NIfTI </a>
        </td>
    </tr>
-    <tr>
+    <tr class="info">
         <th colspan="8" >Histological Space</th>
    </tr>
     <tr>
