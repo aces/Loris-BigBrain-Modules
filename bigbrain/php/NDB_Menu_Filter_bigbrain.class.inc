@@ -5,9 +5,9 @@
  *
  * The bulk of this work is done in the template using javascript.
  */
-require_once "NDB_Form.class.inc";
+require_once "NDB_Menu_Filter.class.inc";
 
-class NDB_Form_bigbrain extends NDB_Form
+class NDB_Menu_Filter_bigbrain extends NDB_Menu_Filter
 {
 
     function _hasAccess()
