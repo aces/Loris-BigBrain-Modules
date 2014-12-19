@@ -90,6 +90,7 @@ if (!empty($DownloadFilename)) {
 }
 
 $fp = fopen($FullPath, 'r');
+header("Content-Length: " . filesize($FullPath));
 while(!feof($fp)) {
     print fread($fp, 1024);
 }
