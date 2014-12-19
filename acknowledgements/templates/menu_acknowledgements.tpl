@@ -1,17 +1,12 @@
 
 {literal}
-<style type="text/css">
-    .table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td{
-        border-top: none;
-    }
-</style>
 <h1 class="title">
 Acknowledgments
 </h1>
 
 <h3>McConnell Brain Imaging Centre, Montr&#233;al Neurological Institute</h3>
 <address>Montr&eacute;al, Canada</address>
-<table class = "table">
+<table class = "table acknowledgement">
     <tr>
         <td>Alan C. Evans</td>
         <td>Principal investigator; project conceptualization and supervision</td>
@@ -57,13 +52,13 @@ Acknowledgments
 	</tr>
     <tr>
         <td>Jordan Stirling</td>
-        <td>Web visualization programmer</td>
+        <td>Data release and interface programmer</td>
     </tr>
 </table>
 
 <h3>Institute of Neuroscience and Medicine, Research Centre J&#252;lich</h3>
 <address>J&#252;lich, Germany</address>
-<table class = "table">
+<table class = "table acknowledgement">
 	<tr>
         <td>Katrin Amunts</td>
         <td>Principal investigator; project conceptualization and supervision, quantitative analysis of the cytoarchitecture</td>
@@ -147,7 +142,7 @@ Acknowledgments
 
 <h3>J&#252;lich Supercomputing Centre, Research Centre J&#252;lich</h3>
 <address>J&#252;lich, Germany</address>
-<table class = "table">
+<table class = "table acknowledgement">
 	<tr>
         <td>Thomas Lippert</td>
         <td>Realization of removal of artifacts and 3D reconstruction on Juropa </td>
@@ -156,7 +151,7 @@ Acknowledgments
 
 <h3>Max Planck Institute for Human Cognitive and Brain Sciences</h3>
 <address>Leipzig, Germany</address>
-<table class = "table">
+<table class = "table acknowledgement">
 	<tr>
         <td>Pierre-Louis Bazin</td>
         <td>Non-linear registration to stereotaxic space</td>
@@ -165,7 +160,7 @@ Acknowledgments
 
 <h3>Center for Advanced Imaging</h3>
 <address>University of Queensland, Australia</address>
-<table class = "table">
+<table class = "table acknowledgement">
 	<tr>
         <td>Andrew Janke</td>
         <td>Developer of TissueStack online web visualization software</td>
@@ -174,7 +169,7 @@ Acknowledgments
 
 <h3>National Research Council of Canada</h3>
 <address>Ottawa, Canada</address>
-<table class = "table">
+<table class = "table acknowledgement">
 	<tr>
         <td>Louis Borgeat</td>
         <td>Volume data modeling and integration, development of the Atelier3D remote visualization and analysis tools</td>
@@ -188,7 +183,7 @@ Acknowledgments
 <h3>
 Supporting Organizations
 </h3>
-<table class = "table">
+<table class = "table acknowledgement">
     <tr>
         <td><a href="http://www.helmholtz.de">Helmholtz Association, Germany</a></td>
         <td>Funding support under the Portfolio project <i>Supercomputing and Modeling for the Human Brain</i></td>
