@@ -5,9 +5,14 @@ BigBrain
 </h1>
 <p><b>The BigBrain dataset</b> is the result of a collaborative effort between the teams of <A HREF="http://www.fz-juelich.de/portal/EN/AboutUs/Institutes_Facilities/Institutes/InstituteNeuroscienceMedicine/_node.html">Dr. Katrin Amunts and Dr. Karl Zilles</A> (<A HREF="http://www.fz-juelich.de/portal/EN/Home/home_node.html">Forschungszentrum J&uuml;lich)</A> and <A HREF="https://cbrain.mcgill.ca/">Dr. Alan Evans</A> (<A HREF="http://www.mni.mcgill.ca/">Montreal Neurological Institute</A>). For research purposes only, no commercial use without written consent.</p>
 
-<p>To browse through the BigBrain <b>In the left pane</b></br>Click and move the orange line across the image. Depending on the speed of your connection, it might take a few seconds for the right pane image to fully load. <b>In the right pane</b>Use the mouse's wheel (up/down arrows and a/z keys are alternatives) to zoom in and out of the section. Left click and move to explore different section regions at higher resolution. Section numbers are displayed to the right.
-</p>
-<p>To download the full resolution histological MINC or PNG file of a selected section can be obtained by clicking on the download links to the right of the viewer.</p>
+<h3>To browse through BigBrain</h3>
+<ul><li><b>In the left pane:  </b>Click and move the orange line across the image. Depending on the speed of your connection, it might take a few seconds for the right pane image to fully load. </br></li><li><b>In the right pane:  </b>Use the mouse's wheel (up/down arrows and a/z keys are alternatives) to zoom in and out of the section. Left click and move to explore different section regions at higher resolution. Section numbers are displayed to the right.
+</li></ul>
+
+<h3>To download BigBrain</h3>The full resolution histological MINC or PNG file of a selected section can be obtained by clicking on the download links to the right of the viewer.
+</br>
+</br>
+</br>
 
 <div id="content" style="height:460px">
     <div id="viewer" style="margin-top: 20px; position:absolute;">
