@@ -42,7 +42,7 @@ $(function() {
         });
 </script>
 
-<div>
+<div id="references">
     <h3>References</h3>
     <ul>
     <li><a href="/papers/HBM2014poster.pdf">Lewis, L.B. et al.:<i> BigBrain: Initial Tissue Classification and Surface Extraction</i>, HBM 2014</a></li>
