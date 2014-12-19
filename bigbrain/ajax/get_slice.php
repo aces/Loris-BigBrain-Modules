@@ -1,4 +1,4 @@
-<?
+<?php
 /**
 * This file displays the jpog images in the browser
 * It checks the image name format and the path to make sure that only allowed images (from dirs defined in the config file) are displayed.
