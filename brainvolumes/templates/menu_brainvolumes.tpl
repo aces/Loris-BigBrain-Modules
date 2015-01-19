@@ -293,7 +293,7 @@
         <th colspan="8" >Histological Space</th>
    </tr>
     <tr>
-        <td class="description">Full volume, 100um</td>
+        <td class="description">Full volume, 100um without optical balancing</td>
         <td class="resolution">100um isotropic (1392x1541x1209)</td>
         <td class="encoding">16-bit gray scale unsigned short</td>
         <td class="comments"></td>
@@ -305,8 +305,23 @@
             <a href="https://bigbrain.loris.ca/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&file=full16_100um.mnc">Minc</a>
        </td>
    </tr>
+   <tr>
+        <td class="description">Full volume, 100um with optical balancing</td>
+        <td class="resolution">100um isotropic (1392x1541x1209)</td>
+        <td class="encoding">16-bit gray scale unsigned short</td>
+        <td class="comments"></td>
+        <td class="size">TODO<!-- 1400 MB --></td>
+        <td class="view">
+            TODO
+            <!-- <a href="https://bigbrain.loris.ca/tissuestack/desktop.html?ds=12&amp;plane=y&amp;x=-1.067&amp;y=1.722&amp;z=74&amp;zoom=1" target="_blank">View</a> -->
+       </td>
+        <td class="download">
+            TODO
+            <!-- <a href="https://bigbrain.loris.ca/get_volume.php?file=full16_100um.mnc">Minc</a> -->
+       </td>
+   </tr>
     <tr>
-        <td class="description">Full volume, 200um</td>
+        <td class="description">Full volume, 200um without optical balancing</td>
         <td class="resolution">200um isotropic (696x770x605)</td>
         <td class="encoding">16-bit gray scale unsigned short</td>
         <td class="comments"></td>
@@ -318,8 +333,23 @@
             <a href="https://bigbrain.loris.ca/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&file=full16_200um.mnc">Minc</a>
        </td>
    </tr>
+   <tr>
+        <td class="description">Full volume, 200um with optical balancing</td>
+        <td class="resolution">200um isotropic (696x770x605)</td>
+        <td class="encoding">16-bit gray scale unsigned short</td>
+        <td class="comments"></td>
+        <td class="size">TODO<!-- 180 MB --></td>
+        <td class="view">
+            TODO
+           <!--  <a href="https://bigbrain.loris.ca/tissuestack/desktop.html?ds=16&amp;plane=y&amp;x=-1.067&amp;y=1.822&amp;z=73.8&amp;zoom=3" target="_blank">View</a> -->
+       </td>
+        <td class="download">
+            TODO
+            <!-- <a href="https://bigbrain.loris.ca/get_volume.php?file=full16_200um.mnc">Minc</a> -->
+       </td>
+   </tr>
     <tr>
-        <td class="description">Full volume, 300um</td>
+        <td class="description">Full volume, 300um without optical balancing</td>
         <td class="resolution">300um isotropic (465x515x403)</td>
         <td class="encoding">16-bit gray scale unsigned short</td>
         <td class="comments"></td>
@@ -331,8 +361,23 @@
             <a href="https://bigbrain.loris.ca/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&file=full16_300um.mnc">Minc</a>
        </td>
    </tr>
+   <tr>
+        <td class="description">Full volume, 300um with optical balancing</td>
+        <td class="resolution">300um isotropic (465x515x403)</td>
+        <td class="encoding">16-bit gray scale unsigned short</td>
+        <td class="comments"></td>
+        <td class="size">TODO<!-- 55 MB --></td>
+        <td class="view">
+            TODO
+            <!-- <a href="https://bigbrain.loris.ca/tissuestack/desktop.html?ds=9&amp;plane=y&amp;x=-1.067&amp;y=1.822&amp;z=74.1&amp;zoom=3" target="_blank">View</a> -->
+       </td>
+        <td class="download">
+            TODO
+            <!-- <a href="https://bigbrain.loris.ca/get_volume.php?file=full16_300um.mnc">Minc</a> -->
+       </td>
+   </tr>
     <tr>
-        <td class="description">Full volume, 400um</td>
+        <td class="description">Full volume, 400um without optical balancing</td>
         <td class="resolution">400um isotropic (348x385x303)</td>
         <td class="encoding">16-bit gray scale unsigned short</td>
         <td class="comments"></td>
@@ -344,8 +389,23 @@
             <a href="https://bigbrain.loris.ca/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&file=full16_400um.mnc">Minc</a>
        </td>
    </tr>
+   <tr>
+        <td class="description">Full volume, 400um with optical balancing</td>
+        <td class="resolution">400um isotropic (348x385x303)</td>
+        <td class="encoding">16-bit gray scale unsigned short</td>
+        <td class="comments"></td>
+        <td class="size">TODO<!-- 24 MB --></td>
+        <td class="view">
+            TODO
+            <!-- <a href="https://bigbrain.loris.ca/tissuestack/desktop.html?ds=5&amp;plane=y&amp;x=-1.067&amp;y=2.022&amp;z=73.6&amp;zoom=3" target="_blank">View</a> -->
+       </td>
+        <td class="download">
+            TODO
+            <!-- <a href="https://bigbrain.loris.ca/get_volume.php?file=full16_400um.mnc">Minc</a> -->
+       </td>
+   </tr>
     <tr>
-        <td class="description">Full volume, 100um</td>
+        <td class="description">Full volume, 100um without optical balancing</td>
         <td class="resolution">100um isotropic (1392x1541x1209)</td>
         <td class="encoding">8-bit gray scale unsigned byte</td>
         <td class="comments"></td>
@@ -357,8 +417,23 @@
             <a href="https://bigbrain.loris.ca/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&file=full8_100um.mnc">Minc</a>
        </td>
    </tr>
+   <tr>
+        <td class="description">Full volume, 100um with optical balancing</td>
+        <td class="resolution">100um isotropic (1392x1541x1209)</td>
+        <td class="encoding">8-bit gray scale unsigned byte</td>
+        <td class="comments"></td>
+        <td class="size">TODO<!-- 603 MB --></td>
+        <td class="view">
+            TODO
+            <!-- <a href="https://bigbrain.loris.ca/tissuestack/desktop.html?ds=14&amp;plane=y&amp;x=-1.067&amp;y=1.722&amp;z=74&amp;zoom=1" target="_blank">View</a> -->
+       </td>
+        <td class="download">
+            TODO
+            <!-- <a href="https://bigbrain.loris.ca/get_volume.php?file=full8_100um.mnc">Minc</a> -->
+       </td>
+   </tr>
     <tr>
-        <td class="description">Full volume, 200um</td>
+        <td class="description">Full volume, 200um without optical balancing</td>
         <td class="resolution">200um isotropic (696x770x605)</td>
         <td class="encoding">8-bit gray scale unsigned byte</td>
         <td class="comments"></td>
@@ -370,8 +445,23 @@
             <a href="https://bigbrain.loris.ca/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&file=full8_200um.mnc">Minc</a>
        </td>
    </tr>
+   <tr>
+        <td class="description">Full volume, 200um with optical balancing</td>
+        <td class="resolution">200um isotropic (696x770x605)</td>
+        <td class="encoding">8-bit gray scale unsigned byte</td>
+        <td class="comments"></td>
+        <td class="size">TODO<!-- 79 MB --></td>
+        <td class="view">
+            TODO
+            <!-- <a href="https://bigbrain.loris.ca/tissuestack/desktop.html?ds=11&amp;plane=y&amp;x=-1.067&amp;y=1.822&amp;z=73.8&amp;zoom=3" target="_blank">View</a> -->
+       </td>
+        <td class="download">
+            TODO
+            <!-- <a href="https://bigbrain.loris.ca/get_volume.php?file=full8_200um.mnc">Minc</a> -->
+       </td>
+   </tr>
     <tr>
-        <td class="description">Full volume, 300um</td>
+        <td class="description">Full volume, 300um without optical balancing</td>
         <td class="resolution">300um isotropic (465x515x403)</td>
         <td class="encoding">8-bit gray scale unsigned byte</td>
         <td class="comments"></td>
@@ -383,8 +473,23 @@
             <a href="https://bigbrain.loris.ca/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&file=full8_300um.mnc">Minc</a>
        </td>
    </tr>
+   <tr>
+        <td class="description">Full volume, 300um with optical balancing</td>
+        <td class="resolution">300um isotropic (465x515x403)</td>
+        <td class="encoding">8-bit gray scale unsigned byte</td>
+        <td class="comments"></td>
+        <td class="size">TODO<!-- 25 MB --></td>
+        <td class="view">
+            TODO
+            <!-- <a href="https://bigbrain.loris.ca/tissuestack/desktop.html?ds=7&amp;plane=y&amp;x=-1.067&amp;y=1.822&amp;z=74.1&amp;zoom=3" target="_blank">View</a> -->
+       </td>
+        <td class="download">
+            TODO
+            <!-- <a href="https://bigbrain.loris.ca/get_volume.php?file=full8_300um.mnc">Minc</a> -->
+       </td>
+   </tr>
     <tr>
-        <td class="description">Full volume, 400um</td>
+        <td class="description">Full volume, 400um without optical balancing</td>
         <td class="resolution">400um isotropic (348x385x303)</td>
         <td class="encoding">8-bit gray scale unsigned byte</td>
         <td class="comments"></td>
@@ -394,6 +499,21 @@
        </td>
         <td class="download">
             <a href="https://bigbrain.loris.ca/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&file=full8_400um.mnc">Minc</a>
+       </td>
+   </tr>
+    <tr>
+        <td class="description">Full volume, 400um with optical balancing</td>
+        <td class="resolution">400um isotropic (348x385x303)</td>
+        <td class="encoding">8-bit gray scale unsigned byte</td>
+        <td class="comments"></td>
+        <td class="size">TODO<!-- 11 MB --></td>
+        <td class="view">
+            TODO
+            <!-- <a href="https://bigbrain.loris.ca/tissuestack/desktop.html?ds=4&amp;plane=y&amp;x=-1.067&amp;y=2.022&amp;z=73.6&amp;zoom=3" target="_blank">View</a> -->
+       </td>
+        <td class="download">
+            TODO
+            <!-- <a href="https://bigbrain.loris.ca/get_volume.php?file=full8_400um.mnc">Minc</a> -->
        </td>
    </tr>
     <tr>
