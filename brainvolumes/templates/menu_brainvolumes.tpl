@@ -316,7 +316,7 @@
             <!-- <a href="https://bigbrain.loris.ca/tissuestack/desktop.html?ds=12&amp;plane=y&amp;x=-1.067&amp;y=1.722&amp;z=74&amp;zoom=1" target="_blank">View</a> -->
        </td>
         <td class="download">
-            <a href="{$url}/get_volume.php?file=full16_100um_optbal.mnc">Minc</a>
+            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full16_100um_optbal.mnc">Minc</a>
        </td>
    </tr>
     <tr>
@@ -343,7 +343,7 @@
            <!--  <a href="https://bigbrain.loris.ca/tissuestack/desktop.html?ds=16&amp;plane=y&amp;x=-1.067&amp;y=1.822&amp;z=73.8&amp;zoom=3" target="_blank">View</a> -->
        </td>
         <td class="download">
-            <a href="{$url}/get_volume.php?file=full16_200um_optbal.mnc">Minc</a>
+            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full16_200um_optbal.mnc">Minc</a>
        </td>
    </tr>
     <tr>
@@ -370,7 +370,7 @@
             <!-- <a href="https://bigbrain.loris.ca/tissuestack/desktop.html?ds=9&amp;plane=y&amp;x=-1.067&amp;y=1.822&amp;z=74.1&amp;zoom=3" target="_blank">View</a> -->
        </td>
         <td class="download">
-            <a href="{$url}/get_volume.php?file=full16_300um_optbal.mnc">Minc</a>
+            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full16_300um_optbal.mnc">Minc</a>
        </td>
    </tr>
     <tr>
@@ -397,7 +397,7 @@
             <!-- <a href="https://bigbrain.loris.ca/tissuestack/desktop.html?ds=5&amp;plane=y&amp;x=-1.067&amp;y=2.022&amp;z=73.6&amp;zoom=3" target="_blank">View</a> -->
        </td>
         <td class="download">
-            <a href="{$url}/get_volume.php?file=full16_400um_optbal.mnc">Minc</a>
+            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full16_400um_optbal.mnc">Minc</a>
        </td>
    </tr>
     <tr>
@@ -424,7 +424,7 @@
             <!-- <a href="https://bigbrain.loris.ca/tissuestack/desktop.html?ds=14&amp;plane=y&amp;x=-1.067&amp;y=1.722&amp;z=74&amp;zoom=1" target="_blank">View</a> -->
        </td>
         <td class="download">
-            <a href="{$url}/get_volume.php?file=full8_100um_optbal.mnc">Minc</a>
+            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full8_100um_optbal.mnc">Minc</a>
        </td>
    </tr>
     <tr>
@@ -451,7 +451,7 @@
             <!-- <a href="https://bigbrain.loris.ca/tissuestack/desktop.html?ds=11&amp;plane=y&amp;x=-1.067&amp;y=1.822&amp;z=73.8&amp;zoom=3" target="_blank">View</a> -->
        </td>
         <td class="download">
-            <a href="{$url}/get_volume.php?file=full8_200um_optbal.mnc">Minc</a>
+            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full8_200um_optbal.mnc">Minc</a>
        </td>
    </tr>
     <tr>
@@ -478,7 +478,7 @@
             <!-- <a href="https://bigbrain.loris.ca/tissuestack/desktop.html?ds=7&amp;plane=y&amp;x=-1.067&amp;y=1.822&amp;z=74.1&amp;zoom=3" target="_blank">View</a> -->
        </td>
         <td class="download">
-            <a href="{$url}/get_volume.php?file=full8_300um_optbal.mnc">Minc</a>
+            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full8_300um_optbal.mnc">Minc</a>
        </td>
    </tr>
     <tr>
@@ -505,7 +505,7 @@
             <!-- <a href="https://bigbrain.loris.ca/tissuestack/desktop.html?ds=4&amp;plane=y&amp;x=-1.067&amp;y=2.022&amp;z=73.6&amp;zoom=3" target="_blank">View</a> -->
        </td>
         <td class="download">
-            <a href="{$url}/get_volume.php?file=full8_400um_optbal.mnc">Minc</a>
+            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full8_400um_optbal.mnc">Minc</a>
        </td>
    </tr>
     <tr>
