@@ -124,11 +124,11 @@ var BigBrain = BigBrain || {};
                     cSlice.addEventListener('load', function() {
                         load.textContent = '';
                     });
-                    cSlice.src = "AjaxHelper.php?Module=bigbrain&script=get_slice_full.php&sliceID=" + cSlice.sliceId;
+                    cSlice.src = "AjaxHelper.php?Module=bigbrain&script=get_slice_full.php&release=2013&sliceID=" + cSlice.sliceId;
                 }
             };
             if(currentSlice.sliceId > 0 && currentSlice.sliceId <= numSlices) {
-                $.get('/AjaxHelper.php?Module=bigbrain&script=get_slice_full.php', { sliceID: currentSlice.sliceId }, closure(currentSlice, slicectx, sliceCanvas));
+                $.get('/AjaxHelper.php?Module=bigbrain&script=get_slice_full.php', { sliceID: currentSlice.sliceId, release: 2013 }, closure(currentSlice, slicectx, sliceCanvas));
             }
         });
         var oldpos = [];

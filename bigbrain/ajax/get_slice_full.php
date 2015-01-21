@@ -36,7 +36,7 @@ $config =& NDB_Config::singleton();
 
 // Basic config validation
 $filePaths    = $config->getSetting('paths');
-$toenailspath = $filePaths['bigbrainReleaseRoot'] . "/coronal/toenails";
+$toenailspath = $filePaths['bigbrainReleaseRoot'] . _GET['release'] . "2D_Final_Sections/coronal/toenails";
 
 
 // define which configuration file we're using for this installation
