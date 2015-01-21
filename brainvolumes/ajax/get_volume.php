@@ -24,7 +24,7 @@ $config =& NDB_Config::singleton();
 
 // Basic config validation
 $filePaths  = $config->getSetting('paths');
-$volumePath = $filePaths['bigbrainReleaseRoot'] . '/volumes';
+$volumePath = $filePaths['bigbrainReleaseRoot'] . $_GET['release']  . '/3D_Volumes';
 
 // Now get the file and do file validation
 $File = $_GET['file'];

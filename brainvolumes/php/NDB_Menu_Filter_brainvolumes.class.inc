@@ -22,5 +22,12 @@ class NDB_Menu_Filter_brainvolumes extends NDB_Menu_Filter
     {
         return true;
     }
+    
+    function _setupVariables()
+    {
+        $config=&NDB_Config::singleton();
+        $this->tpl_data['url'] = $config->getSetting('url');
+        return true;
+    }
 }
 ?>
