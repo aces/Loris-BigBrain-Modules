@@ -25,7 +25,7 @@ $config =& NDB_Config::singleton();
 
 // Basic config validation
 $filePaths    = $config->getSetting('paths');
-$mincpath     = $filePaths['bigbrainReleaseRoot'] . "/coronal/minc";
+$mincpath     = $filePaths['bigbrainReleaseRoot'] . $_REQUEST['release']  . "/2D_Final_Sections/Coronal/Minc";
 $sliceID      = $_REQUEST['sliceID'];
 $basename     = "pm" . str_pad($sliceID,4,"0", STR_PAD_LEFT) . "o.mnc";
 $file         = $mincpath . "/" . $basename;
