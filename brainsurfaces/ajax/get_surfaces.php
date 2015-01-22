@@ -30,7 +30,7 @@ $volumePath = $filePaths['bigbrainReleaseRoot'] . $_GET['release']  . '/3D_Surfa
 $File = $_GET['file'];
 
 // File validation
-if (! (preg_match('/^\w[\w\-]+\.(mnc|nii)(\.gz)?$/', $File) === 1)) {
+if (! (preg_match('/^\w[\w\-]+\.(obj)$/', $File) === 1)) {
     error_log("ERROR: Wrong file.");
     header("HTTP/1.1 400 Bad Request");
     exit(3);
@@ -55,21 +55,9 @@ if (strpos("..", $File) !== false) {
 $FullPath = $volumePath . '/' . $File;
 
 switch($FileExt) {
-case 'mnc':
-    $MimeType = "application/x-minc";
+case 'obj':
+    $MimeType = "text/plain";
     $DownloadFilename = basename($File);
-    break;
-case 'png':
-    $MimeType = "image/png";
-    break;
-case 'jpg':
-    $MimeType = "image/jpeg";
-    break;
-case 'header':
-case 'raw_byte.gz':
-    // JIVs are relative to imagePath for historical reasons
-    // And they don't have a real mime type.
-    $MimeType = 'application/octet-stream';
     break;
 default:
     $MimeType = 'application/octet-stream';
