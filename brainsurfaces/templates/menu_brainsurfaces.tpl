@@ -10,7 +10,6 @@
       <tr class="info">
           <th>Description</th>
           <th>Resolution</th>
-          <th>Encoding</th>
           <th>Comments</th>
           <th>Size</th>
           <th>View</th>
@@ -18,10 +17,24 @@
      </tr>
  </thead>
  <tbody>
+    <tr class="info">
+      <th colspan="8" >MNI ICBM 152 Space (ICBM 2009b Nonlinear Symmetric)</th>
+    </tr>
+    <tr>
+      <td colspan="8" >No Data</td>
+    </tr>
+    <tr class="info">
+      <th colspan="8">7T syn24 template in MNI Space</th>
+    </tr>
+    <tr>
+      <td colspan="8">No Data</td>
+    </tr>
+    <tr class="info">
+      <th colspan="8" >Histological Space</th>
+    </tr>
     <tr>
       <td class="description">Grey Left</td>
-      <td class="resolution"></td>
-      <td class="encoding"></td>
+      <td class="resolution">327680 Triangles</td>
       <td class="comments"></td>
       <td class="size">18 MB</td>
       <td>
@@ -32,8 +45,7 @@
     </tr>
     <tr>
       <td class="description">Grey Right</td>
-      <td class="resolution"></td>
-      <td class="encoding"></td>
+      <td class="resolution">327680 Triangles</td>
       <td class="comments"></td>
       <td class="size">18 MB</td>
       <td class="view">
@@ -44,8 +56,7 @@
     </tr>
     <tr>
       <td class="description">White Left</td>
-      <td class="resolution"></td>
-      <td class="encoding"></td>
+      <td class="resolution">327680 Triangles</td>
       <td class="comments"></td>
       <td class="size">18 MB</td>
       <td class="view">
@@ -56,8 +67,7 @@
     </tr>
     <tr>
       <td class="description">White Right</td>
-      <td class="resolution"></td>
-      <td class="encoding"></td>
+      <td class="resolution">327680 Triangles</td>
       <td class="comments"></td>
       <td class="size">18 MB</td>
       <td class="view">
