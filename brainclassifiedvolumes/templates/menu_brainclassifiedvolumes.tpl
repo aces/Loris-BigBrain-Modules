@@ -18,10 +18,25 @@
      </tr>
  </thead>
  <tbody>
+    <tr class="info">
+      <th colspan="8" >MNI ICBM 152 Space (ICBM 2009b Nonlinear Symmetric)</th>
+    </tr>
+    <tr>
+      <td colspan="8" >No Data</td>
+    </tr>
+    <tr class="info">
+      <th colspan="8">7T syn24 template in MNI Space</th>
+    </tr>
+    <tr>
+      <td colspan="8">No Data</td>
+    </tr>
+    <tr class="info">
+      <th colspan="8" >Histological Space</th>
+    </tr>
     <tr>
       <td class="description">Full Classified Volume, 100um</td>
-      <td class="resolution"></td>
-      <td class="encoding"></td>
+      <td class="resolution">100um isotropic (1970x2330x1890)</td>
+      <td class="encoding">8-bit unsigned byte</td>
       <td class="comments"></td>
       <td class="size">79 MB</td>
       <td>
@@ -32,8 +47,8 @@
     </tr>
     <tr>
       <td class="description">Full Classified Volume, 200um</td>
-      <td class="resolution"></td>
-      <td class="encoding"></td>
+      <td class="resolution">200um isotropic (985x1165x945)</td>
+      <td class="encoding">8-bit unsigned byte</td>
       <td class="comments"></td>
       <td class="size">14 MB</td>
       <td class="view">
@@ -44,8 +59,8 @@
     </tr>
     <tr>
       <td class="description">Full Classified Volume, 300um</td>
-      <td class="resolution"></td>
-      <td class="encoding"></td>
+      <td class="resolution">300um isotropic (657x777x630)</td>
+      <td class="encoding">8-bit unsigned byte</td>
       <td class="comments"></td>
       <td class="size">5 MB</td>
       <td class="view">
@@ -56,8 +71,8 @@
     </tr>
     <tr>
       <td class="description">Full Classified Volume, 400um</td>
-      <td class="resolution"></td>
-      <td class="encoding"></td>
+      <td class="resolution">400um isotropic (493x583x473)</td>
+      <td class="encoding">8-bit unsigned byte</td>
       <td class="comments"></td>
       <td class="size">3 MB</td>
       <td class="view">
