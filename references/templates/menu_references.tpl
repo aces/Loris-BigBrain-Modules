@@ -1,5 +1,5 @@
 <h1 class="title">
-Refrences
+References
 </h1>
 <br>
 
