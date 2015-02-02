@@ -6,7 +6,7 @@
  */
 require_once 'NDB_Menu_Filter.class.inc';
 
-class NDB_Menu_Filter_refrences extends NDB_Menu_Filter
+class NDB_Menu_Filter_references extends NDB_Menu_Filter
 {
     /**
      * Since this is a public instance, everyone should have access.
