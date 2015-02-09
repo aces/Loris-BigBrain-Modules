@@ -21,7 +21,94 @@
       <th colspan="8" >MNI ICBM 152 Space (ICBM 2009b Nonlinear Symmetric)</th>
     </tr>
     <tr>
-      <td colspan="8" >No Data</td>
+      <tr>
+      <td class="description">Grey Left</td>
+      <td class="resolution">327680 Triangles</td>
+      <td class="comments"></td>
+      <td class="size">18 MB</td>
+      <td>
+      </td>
+      <td class="view">
+        <a href="{$url}/AjaxHelper.php?Module=brainsurfaces&get_surface.php&script=get_surfaces.php&release=2013&file=gray_left_327680_2009b_sym.obj">Obj</a>
+      </td>
+    </tr>
+    <tr>
+      <td class="description">Grey Right</td>
+      <td class="resolution">327680 Triangles</td>
+      <td class="comments"></td>
+      <td class="size">18 MB</td>
+      <td class="view">
+      </td>
+      <td class="download">
+        <a href="{$url}/AjaxHelper.php?Module=brainsurfaces&get_surfaces.php&script=get_surfaces.php&release=2013&file=gray_right_327680_2009b_sym.obj">Obj</a>
+      </td>
+    </tr>
+    <tr>
+      <td class="description">White Left</td>
+      <td class="resolution">327680 Triangles</td>
+      <td class="comments"></td>
+      <td class="size">18 MB</td>
+      <td class="view">
+      </td>
+      <td class="download">
+        <a href="{$url}/AjaxHelper.php?Module=brainsurfaces&get_surfaces.php&script=get_surfaces.php&release=2013&file=white_left_327680_2009b_sym.obj">Obj</a>
+      </td>
+    </tr>
+    <tr>
+      <td class="description">White Right</td>
+      <td class="resolution">327680 Triangles</td>
+      <td class="comments"></td>
+      <td class="size">18 MB</td>
+      <td class="view">
+      </td>
+      <td class="download">
+        <a href="{$url}/AjaxHelper.php?Module=brainsurfaces&get_surfaces.php&script=get_surfaces.php&release=2013&file=white_left_327680_2009b_sym.obj">Obj</a>
+      </td>
+    </tr>
+    <tr>
+      <tr>
+      <td class="description">Grey Left</td>
+      <td class="resolution">327680 Triangles</td>
+      <td class="comments"></td>
+      <td class="size">8 MB</td>
+      <td>
+      </td>
+      <td class="view">
+        <a href="{$url}/AjaxHelper.php?Module=brainsurfaces&get_surface.php&script=get_surfaces.php&release=2013&file=gray_left_327680_2009b_sym.gii">GifTi</a>
+      </td>
+    </tr>
+    <tr>
+      <td class="description">Grey Right</td>
+      <td class="resolution">327680 Triangles</td>
+      <td class="comments"></td>
+      <td class="size">8 MB</td>
+      <td class="view">
+      </td>
+      <td class="download">
+        <a href="{$url}/AjaxHelper.php?Module=brainsurfaces&get_surfaces.php&script=get_surfaces.php&release=2013&file=gray_right_327680_2009b_sym.gii">GifTi</a>
+      </td>
+    </tr>
+    <tr>
+      <td class="description">White Left</td>
+      <td class="resolution">327680 Triangles</td>
+      <td class="comments"></td>
+      <td class="size">8 MB</td>
+      <td class="view">
+      </td>
+      <td class="download">
+        <a href="{$url}/AjaxHelper.php?Module=brainsurfaces&get_surfaces.php&script=get_surfaces.php&release=2013&file=white_left_327680_2009b_sym.gii">GifTi</a>
+      </td>
+    </tr>
+    <tr>
+      <td class="description">White Right</td>
+      <td class="resolution">327680 Triangles</td>
+      <td class="comments"></td>
+      <td class="size">8 MB</td>
+      <td class="view">
+      </td>
+      <td class="download">
+        <a href="{$url}/AjaxHelper.php?Module=brainsurfaces&get_surfaces.php&script=get_surfaces.php&release=2013&file=white_left_327680_2009b_sym.gii">GifTi</a>
+      </td>
     </tr>
     <tr class="info">
       <th colspan="8">7T syn24 template in MNI Space</th>
@@ -74,6 +161,51 @@
       </td>
       <td class="download">
         <a href="{$url}/AjaxHelper.php?Module=brainsurfaces&get_surfaces.php&script=get_surfaces.php&release=2013&file=white_left_327680.obj">Obj</a>
+      </td>
+    </tr>
+    <tr>
+      <tr>
+      <td class="description">Grey Left</td>
+      <td class="resolution">327680 Triangles</td>
+      <td class="comments"></td>
+      <td class="size">8 MB</td>
+      <td>
+      </td>
+      <td class="view">
+        <a href="{$url}/AjaxHelper.php?Module=brainsurfaces&get_surface.php&script=get_surfaces.php&release=2013&file=gray_left_327680.gii">GifTi</a>
+      </td>
+    </tr>
+    <tr>
+      <td class="description">Grey Right</td>
+      <td class="resolution">327680 Triangles</td>
+      <td class="comments"></td>
+      <td class="size">8 MB</td>
+      <td class="view">
+      </td>
+      <td class="download">
+        <a href="{$url}/AjaxHelper.php?Module=brainsurfaces&get_surfaces.php&script=get_surfaces.php&release=2013&file=gray_right_327680.gii">GifTi</a>
+      </td>
+    </tr>
+    <tr>
+      <td class="description">White Left</td>
+      <td class="resolution">327680 Triangles</td>
+      <td class="comments"></td>
+      <td class="size">8 MB</td>
+      <td class="view">
+      </td>
+      <td class="download">
+        <a href="{$url}/AjaxHelper.php?Module=brainsurfaces&get_surfaces.php&script=get_surfaces.php&release=2013&file=white_left_327680.gii">GifTi</a>
+      </td>
+    </tr>
+    <tr>
+      <td class="description">White Right</td>
+      <td class="resolution">327680 Triangles</td>
+      <td class="comments"></td>
+      <td class="size">8 MB</td>
+      <td class="view">
+      </td>
+      <td class="download">
+        <a href="{$url}/AjaxHelper.php?Module=brainsurfaces&get_surfaces.php&script=get_surfaces.php&release=2013&file=white_left_327680.gii">GifTi</a>
       </td>
     </tr>
   </tbody>
