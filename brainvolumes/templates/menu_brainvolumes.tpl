@@ -101,7 +101,7 @@
        </td>
        <td class="download">
             <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full16_300um_optbal_2009b_sym.nii.gz">
-                NIfTI<br>(TODO MB)
+                NIfTI<br>(125 MB)
            </a>
        </td>
    </tr>
@@ -131,7 +131,7 @@
             <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full16_400um_optbal_2009b_sym.mnc">Minc<br>(55 MB)</a>
        </td>
        <td class="download">
-            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full16_400um_optbal_2009b_sym.nii.gz">NIfTI<br>(TODO MB)</a>
+            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full16_400um_optbal_2009b_sym.nii.gz">NIfTI<br>(54 MB)</a>
        </td>
    </tr>
    <tr>
@@ -174,7 +174,7 @@
        <td class="comments"></td>
        <td class="view"></td>
        <td class="download"><a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full8_200um_optbal_2009b_sym.mnc">Minc<br>(156 MB)</a></td>
-       <td class="download"><a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full8_200um_optbal_2009b_sym.nii.gz">NIfTI<br>(TODO MB)</a></td>
+       <td class="download"><a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full8_200um_optbal_2009b_sym.nii.gz">NIfTI<br>(156 MB)</a></td>
    </tr>
    <tr>
       <td class="description">Full volume, 300um without optical balancing</td>
@@ -209,7 +209,7 @@
        </td>
        <td class="download">
             <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full8_300um_optbal_2009b_sym.nii.gz">
-                NIfTI<br>(TODO MB)
+                NIfTI<br>(48 MB)
            </a>
        </td>
    </tr>
@@ -239,7 +239,7 @@
             <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full8_400um_optbal_2009b_sym.mnc">Minc<br>(21 MB)</a>
        </td>
        <td class="download">
-            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full8_400um_optbal_2009b_sym.nii.gz">NIfTI<br>(TODO MB)</a>
+            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full8_400um_optbal_2009b_sym.nii.gz">NIfTI<br>(21 MB)</a>
        </td>
    </tr>
    <tr>
