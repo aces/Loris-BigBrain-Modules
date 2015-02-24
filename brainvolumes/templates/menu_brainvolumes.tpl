@@ -1,9 +1,3 @@
-<style type="text/css">
-  .download{
-    white-space: nowrap;
-  }
-</style>
-
 <h1>3D Volume Data</h1>
 <b>
 <p>
@@ -13,7 +7,7 @@
 
 <table class="dynamictable table table-hover table-primary table-bordered" border="0" width="100%">
     <thead>
-        <tr class="info">
+        <tr class="header">
             <th>Description</th>
             <th>Resolution</th>
             <th>Encoding</th>
