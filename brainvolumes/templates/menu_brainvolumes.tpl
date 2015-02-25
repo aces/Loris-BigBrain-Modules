@@ -10,8 +10,10 @@
             <th>View</th>
             <th colspan="2">Download</th>
        </tr>
-        <tr class="info">
-            <th colspan="8" >MNI ICBM 152 Space (ICBM 2009b Nonlinear Symmetric)</th>
+        <tr>
+            <th class="info" colspan="5" >MNI ICBM 152 Space (ICBM 2009b Nonlinear Symmetric)</th>
+            <th class="header">Minc</th>
+            <th class="header">NIfTI</th>
        </tr>
    </thead>
    <tbody>
@@ -242,8 +244,10 @@
         <td class="download">{*<a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=mni_icbm152_t1_tal_nlin_sym_09b_hires.mnc">Minc</a>*}</td>
         <td></td>
    </tr>
-    <tr class="info">
-        <th colspan="8">7T syn24 template in MNI Space</th>
+    <tr>
+        <th class="info" colspan="5">7T syn24 template in MNI Space</th>
+        <th class="header">Minc</th>
+        <th class="header">NIfTI</th>
    </tr>
     <tr>
         <td class="description">Full volume, 400um</td>
@@ -276,8 +280,10 @@
            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=syn24-average-t1map-lvl2-10.nii.gz">NIfTI<br>(104 MB) </a>
        </td>
    </tr>
-    <tr class="info">
-        <th colspan="8" >Histological Space</th>
+    <tr>
+        <th class="info" colspan="5" >Histological Space</th>
+        <th class="header">Minc</th>
+        <th class="header">NIfTI</th>
    </tr>
     <tr>
         <td class="description">Full volume, 100um without optical balancing</td>

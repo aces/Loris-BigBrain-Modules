@@ -1,3 +1,8 @@
+<style type="text/css">
+  .table-hover>tbody>tr:hover>th.header{
+    background-color: #064785;
+  }
+</style>
 <h1>3D Classified Volumes Data</h1>
 
 <table class="dynamictable table table-hover table-primary table-bordered" border="0" width="100%">
@@ -12,8 +17,10 @@
      </tr>
  </thead>
  <tbody>
-    <tr class="info">
-      <th colspan="8" >MNI ICBM 152 Space (ICBM 2009b Nonlinear Symmetric)</th>
+    <tr>
+      <th colspan="5" class="info">MNI ICBM 152 Space (ICBM 2009b Nonlinear Symmetric)</th>
+      <th class="header">Minc</th>
+      <th class="header">NIfTI</th>
     </tr>
     <tr>
       <td class="description">Full Classified Volume, 100um</td>
@@ -69,14 +76,18 @@
         <a href="{$url}/AjaxHelper.php?Module=brainclassifiedvolumes&get_classifiedvolumes.php&script=get_classifiedvolumes.php&release=2013&file=full_cls_400um_2009b_sym.nii.gz">NIfTI<br>(4 MB)</a>
       </td>
     </tr>
-    <tr class="info">
-      <th colspan="8">7T syn24 template in MNI Space</th>
+    <tr>
+      <th class="info" colspan="5">7T syn24 template in MNI Space</th>
+      <th class="header">Minc</th>
+      <th class="header">NIfTI</th>
     </tr>
     <tr>
       <td colspan="8">No Data</td>
     </tr>
-    <tr class="info">
-      <th colspan="8" >Histological Space</th>
+    <tr>
+      <th class="info" colspan="5" >Histological Space</th>
+      <th class="header">Minc</th>
+      <th class="header">NIfTI</th>
     </tr>
     <tr>
       <td class="description">Full Classified Volume, 100um</td>

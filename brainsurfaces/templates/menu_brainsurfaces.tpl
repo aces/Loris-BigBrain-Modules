@@ -11,8 +11,10 @@
      </tr>
  </thead>
  <tbody>
-    <tr class="info">
-      <th colspan="8" >MNI ICBM 152 Space (ICBM 2009b Nonlinear Symmetric)</th>
+    <tr>
+      <th class="info" colspan="4" >MNI ICBM 152 Space (ICBM 2009b Nonlinear Symmetric)</th>
+      <th class="header">Minc</th>
+      <th class="header">NIfTI</th>
     </tr>
     <tr>
       <tr>
@@ -67,14 +69,18 @@
         <a href="{$url}/AjaxHelper.php?Module=brainsurfaces&get_surfaces.php&script=get_surfaces.php&release=2013&file=white_left_327680_2009b_sym.gii">GifTi<br>(8 MB)</a>
       </td>
     </tr>
-    <tr class="info">
-      <th colspan="8">7T syn24 template in MNI Space</th>
+    <tr>
+      <th class="info" colspan="4">7T syn24 template in MNI Space</th>
+      <th class="header">Minc</th>
+      <th class="header">NIfTI</th>
     </tr>
     <tr>
       <td colspan="8">No Data</td>
     </tr>
-    <tr class="info">
-      <th colspan="8" >Histological Space</th>
+    <tr>
+      <th class="info" colspan="4">Histological Space</th>
+      <th class="header">Minc</th>
+      <th class="header">NIfTI</th>
     </tr>
     <tr>
       <td class="description">Grey Left</td>
