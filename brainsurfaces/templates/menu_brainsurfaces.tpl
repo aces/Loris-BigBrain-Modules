@@ -13,8 +13,8 @@
  <tbody>
     <tr>
       <th class="info" colspan="4" >MNI ICBM 152 Space (ICBM 2009b Nonlinear Symmetric)</th>
-      <th class="header">Minc</th>
-      <th class="header">NIfTI</th>
+      <th class="header">Obj</th>
+      <th class="header">GIfTI</th>
     </tr>
     <tr>
       <tr>
@@ -71,16 +71,16 @@
     </tr>
     <tr>
       <th class="info" colspan="4">7T syn24 template in MNI Space</th>
-      <th class="header">Minc</th>
-      <th class="header">NIfTI</th>
+      <th class="header">Obj</th>
+      <th class="header">GIfTI</th>
     </tr>
     <tr>
       <td colspan="8">No Data</td>
     </tr>
     <tr>
       <th class="info" colspan="4">Histological Space</th>
-      <th class="header">Minc</th>
-      <th class="header">NIfTI</th>
+      <th class="header">Obj</th>
+      <th class="header">GIfTI</th>
     </tr>
     <tr>
       <td class="description">Grey Left</td>
