@@ -30,7 +30,7 @@ $volumePath = $filePaths['bigbrainReleaseRoot'] . $_GET['release']  . '/3D_Class
 $File = $_GET['file'];
 
 // File validation
-if (! (preg_match('/^\w[\w\-]+\.(mnc)$/', $File) === 1)) {
+if (! (preg_match('/^\w[\w\-]+\.(mnc|nii)(\.gz)?$/', $File) === 1)) {
     error_log("ERROR: Wrong file.");
     header("HTTP/1.1 400 Bad Request");
     exit(3);
