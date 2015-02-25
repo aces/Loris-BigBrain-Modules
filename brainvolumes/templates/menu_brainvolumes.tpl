@@ -1,9 +1,4 @@
 <h1>3D Volume Data</h1>
-<b>
-<p>
-<font style="color: #A9191F;">*Please note that due to the recent release of this data, the viewer accessible through the View links below may be under heavy load</font>
-</p>
-</b>
 
 <table class="dynamictable table table-hover table-primary table-bordered" border="0" width="100%">
     <thead>
@@ -24,25 +19,26 @@
            <td class="description">Full volume, 100um without optical balancing</td>
            <td class="resolutio n">100um isotropic (1970x2330x1890)</td>
            <td class="encoding">16-bit gray scale unsigned short</td>
-           <td class="comments">File to large for NIfTI</td>
+           <td class="comments"></td>
            <td><a href="https://bigbrain.loris.ca/tissuestack/desktop.html?ds=10&amp;plane=y&amp;x=0.3&amp;y=22.3&amp;z=-17.8&amp;zoom=1" target="_blank">View</a>
            </td>
            <td class="download">
             <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full16_100um_2009b_sym.mnc">Minc<br>(3136 MB)</a>
            </td>
-           <td class="download">
+           <td>
+              File too large
            </td>
        </tr>
        <tr>
            <td class="description">Full volume, 100um with optical balancing</td>
            <td class="resolution">100um isotropic (1970x2330x1890)</td>
            <td class="encoding">16-bit gray scale unsigned short</td>
-           <td class="comments">File to large for NIfTI</td>
+           <td class="comments"></td>
            <td></td>
            <td class="download">
             <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full16_100um_optbal_2009b_sym.mnc">Minc<br>(3156 MB)</a>
            </td>
-           <td></td>
+           <td>File too large</td>
        </tr>
        <tr>
            <td class="description">Full volume, 200um without optical balancing</td>
@@ -57,10 +53,10 @@
            <td class="description">Full volume, 200um with optical balancing</td>
            <td class="resolution">200um isotropic (985x1165x945)</td>
            <td class="encoding">16-bit gray scale unsigned short</td>
-           <td class="comments">File to large for NIfTI</td>
+           <td class="comments"></td>
            <td class="view"></td>
            <td class="download"><a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full16_200um_optbal_2009b_sym.mnc">Minc<br>(412 MB)</a></td>
-           <td></td>
+           <td>File too large</td>
        </tr>
        <tr>
         <td class="description">Full volume, 300um without optical balancing</td>
@@ -132,25 +128,24 @@
        <td class="description">Full volume, 100um without optical balancing</td>
        <td class="resolutio n">100um isotropic (1970x2330x1890)</td>
        <td class="encoding">8-bit gray scale unsigned short</td>
-       <td class="comments">File to large for NIfTI</td>
+       <td class="comments"></td>
        <td><a href="https://bigbrain.loris.ca/tissuestack/desktop.html?ds=13&amp;plane=y&amp;x=0.3&amp;y=22.4&amp;z=-17.8&amp;zoom=1" target="_blank">View</a>
        </td>
        <td class="download">
         <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full8_100um_2009b_sym.mnc">Minc<br>(1305 MB)</a>
        </td>
-       <td class="download">
-       </td>
+       <td>File too large</td>
    </tr>
    <tr>
        <td class="description">Full volume, 100um with optical balancing</td>
        <td class="resolution">100um isotropic (1970x2330x1890)</td>
        <td class="encoding">8-bit gray scale unsigned short</td>
-       <td class="comments">File to large for NIfTI</td>
+       <td class="comments"></td>
        <td></td>
        <td class="download">
         <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full8_100um_optbal_2009b_sym.mnc">Minc<br>(1178 MB)</a>
        </td>
-       <td></td>
+       <td>File too large</td>
    </tr>
    <tr>
        <td class="description">Full volume, 200um without optical balancing</td>
@@ -288,26 +283,26 @@
         <td class="description">Full volume, 100um without optical balancing</td>
         <td class="resolution">100um isotropic (1392x1541x1209)</td>
         <td class="encoding">16-bit gray scale unsigned short</td>
-        <td class="comments">File to large for NIfTI</td>
+        <td class="comments"></td>
         <td class="view">
             <a href="https://bigbrain.loris.ca/tissuestack/desktop.html?ds=12&amp;plane=y&amp;x=-1.067&amp;y=1.722&amp;z=74&amp;zoom=1" target="_blank">View</a>
        </td>
         <td class="download">
             <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full16_100um.mnc">Minc<br>(1459 MB)</a>
        </td>
-       <td></td>
+       <td>File too large</td>
    </tr>
    <tr>
         <td class="description">Full volume, 100um with optical balancing</td>
         <td class="resolution">100um isotropic (1392x1541x1209)</td>
         <td class="encoding">16-bit gray scale unsigned short</td>
-        <td class="comments">File to large for NIfTI</td>
+        <td class="comments"></td>
         <td class="view">
        </td>
         <td class="download">
             <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full16_100um_optbal.mnc">Minc<br>(1486 MB)</a>
        </td>
-       <td></td>
+       <td>File too large</td>
    </tr>
     <tr>
         <td class="description">Full volume, 200um without optical balancing</td>
@@ -403,27 +398,27 @@
         <td class="description">Full volume, 100um without optical balancing</td>
         <td class="resolution">100um isotropic (1392x1541x1209)</td>
         <td class="encoding">8-bit gray scale unsigned byte</td>
-        <td class="comments">File to large for NIfTI</td>
+        <td class="comments"></td>
         <td class="view">
             <a href="https://bigbrain.loris.ca/tissuestack/desktop.html?ds=14&amp;plane=y&amp;x=-1.067&amp;y=1.722&amp;z=74&amp;zoom=1" target="_blank">View</a>
        </td>
         <td class="download">
             <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full8_100um.mnc">Minc<br>(632 MB)</a>
        </td>
-       <td></td>
+       <td>File too large</td>
    </tr>
    <tr>
         <td class="description">Full volume, 100um with optical balancing</td>
         <td class="resolution">100um isotropic (1392x1541x1209)</td>
         <td class="encoding">8-bit gray scale unsigned byte</td>
-        <td class="comments">File to large for NIfTI</td>
+        <td class="comments"></td>
         <td class="view">
             {*<a href="https://bigbrain.loris.ca/tissuestack/desktop.html?ds=14&amp;plane=y&amp;x=-1.067&amp;y=1.722&amp;z=74&amp;zoom=1" target="_blank">View</a>*}
        </td>
         <td class="download">
             <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full8_100um_optbal.mnc">Minc<br>(634 MB)</a>
        </td>
-       <td></td>
+       <td>File too large</td>
    </tr>
     <tr>
         <td class="description">Full volume, 200um without optical balancing</td>

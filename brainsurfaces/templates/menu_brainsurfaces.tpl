@@ -1,9 +1,4 @@
 <h1>3D Surface Data</h1>
-<b>
-<p>
-<font style="color: #A9191F;">*Please note that due to the recent release of this data, the viewer accessible through the View links below may be under heavy load</font>
-</p>
-</b>
 
 <table class="dynamictable table table-hover table-primary table-bordered" border="0" width="100%">
   <thead>
