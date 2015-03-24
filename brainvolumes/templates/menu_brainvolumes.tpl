@@ -25,7 +25,7 @@
            <td><a href="https://bigbrain.loris.ca/tissuestack/desktop.html?ds=10&amp;plane=y&amp;x=0.3&amp;y=22.3&amp;z=-17.8&amp;zoom=1" target="_blank">View</a>
            </td>
            <td class="download">
-            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full16_100um_2009b_sym.mnc">Minc<br>(3136 MB)</a>
+            <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full16_100um_2009b_sym.mnc">Minc<br>(3136 MB)</a>
            </td>
            <td>
               File too large
@@ -38,7 +38,7 @@
            <td class="comments"></td>
            <td></td>
            <td class="download">
-            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full16_100um_optbal_2009b_sym.mnc">Minc<br>(3156 MB)</a>
+            <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full16_100um_optbal_2009b_sym.mnc">Minc<br>(3156 MB)</a>
            </td>
            <td>File too large</td>
        </tr>
@@ -48,8 +48,8 @@
            <td class="encoding">16-bit gray scale unsigned short</td>
            <td class="comments"></td>
            <td class="view"><a href="https://bigbrain.loris.ca/tissuestack/desktop.html?ds=15&amp;plane=y&amp;x=0.45&amp;y=22.45&amp;z=-17.75&amp;zoom=3" target="_blank">View</a></td>
-           <td class="download"><a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full16_200um_2009b_sym.mnc">Minc<br>(411 MB)</a></td>
-           <td class="download"><a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full16_200um_2009b_sym.nii.gz">NIfTI<br>(409 MB)</a></td>
+           <td class="download"><a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full16_200um_2009b_sym.mnc">Minc<br>(411 MB)</a></td>
+           <td class="download"><a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full16_200um_2009b_sym.nii.gz">NIfTI<br>(409 MB)</a></td>
        </tr>
        <tr>
            <td class="description">Full volume, 200um with optical balancing</td>
@@ -57,7 +57,7 @@
            <td class="encoding">16-bit gray scale unsigned short</td>
            <td class="comments"></td>
            <td class="view"></td>
-           <td class="download"><a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full16_200um_optbal_2009b_sym.mnc">Minc<br>(412 MB)</a></td>
+           <td class="download"><a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full16_200um_optbal_2009b_sym.mnc">Minc<br>(412 MB)</a></td>
            <td>File too large</td>
        </tr>
        <tr>
@@ -69,12 +69,12 @@
             <a href="https://bigbrain.loris.ca/tissuestack/desktop.html?ds=18&amp;plane=y&amp;x=0.6&amp;y=22.4&amp;z=-17.7&amp;zoom=3" target="_blank">View</a>
        </td>
         <td class="download">
-            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full16_300um_2009b_sym.mnc">
+            <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full16_300um_2009b_sym.mnc">
                 Minc<br>(126 MB)
            </a>
        </td>
        <td class="download">
-            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full16_300um_2009b_sym.nii.gz">
+            <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full16_300um_2009b_sym.nii.gz">
                 NIfTI<br>(125 MB)
            </a>
        </td>
@@ -87,12 +87,12 @@
         <td class="view">
        </td>
         <td class="download">
-            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full16_300um_optbal_2009b_sym.mnc">
+            <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full16_300um_optbal_2009b_sym.mnc">
                 Minc<br>(126 MB)
            </a>
        </td>
        <td class="download">
-            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full16_300um_optbal_2009b_sym.nii.gz">
+            <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full16_300um_optbal_2009b_sym.nii.gz">
                 NIfTI<br>(125 MB)
            </a>
        </td>
@@ -106,10 +106,10 @@
             <a href="https://bigbrain.loris.ca/tissuestack/desktop.html?ds=6&amp;plane=y&amp;x=0.35&amp;y=22.75&amp;z=-17.65&amp;zoom=3" target="_blank">View</a>
        </td>
         <td class="download">
-            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full16_400um_2009b_sym.mnc">Minc<br>(55 MB)</a>
+            <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full16_400um_2009b_sym.mnc">Minc<br>(55 MB)</a>
        </td>
        <td class="download">
-            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full16_400um_2009b_sym.nii.gz">NIfTI<br>(55 MB)</a>
+            <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full16_400um_2009b_sym.nii.gz">NIfTI<br>(55 MB)</a>
        </td>
    </tr>
    <tr>
@@ -120,10 +120,10 @@
         <td class="view">
        </td>
         <td class="download">
-            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full16_400um_optbal_2009b_sym.mnc">Minc<br>(55 MB)</a>
+            <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full16_400um_optbal_2009b_sym.mnc">Minc<br>(55 MB)</a>
        </td>
        <td class="download">
-            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full16_400um_optbal_2009b_sym.nii.gz">NIfTI<br>(54 MB)</a>
+            <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full16_400um_optbal_2009b_sym.nii.gz">NIfTI<br>(54 MB)</a>
        </td>
    </tr>
    <tr>
@@ -134,7 +134,7 @@
        <td><a href="https://bigbrain.loris.ca/tissuestack/desktop.html?ds=13&amp;plane=y&amp;x=0.3&amp;y=22.4&amp;z=-17.8&amp;zoom=1" target="_blank">View</a>
        </td>
        <td class="download">
-        <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full8_100um_2009b_sym.mnc">Minc<br>(1305 MB)</a>
+        <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full8_100um_2009b_sym.mnc">Minc<br>(1305 MB)</a>
        </td>
        <td>File too large</td>
    </tr>
@@ -145,7 +145,7 @@
        <td class="comments"></td>
        <td></td>
        <td class="download">
-        <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full8_100um_optbal_2009b_sym.mnc">Minc<br>(1178 MB)</a>
+        <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full8_100um_optbal_2009b_sym.mnc">Minc<br>(1178 MB)</a>
        </td>
        <td>File too large</td>
    </tr>
@@ -155,8 +155,8 @@
        <td class="encoding">8-bit gray scale unsigned short</td>
        <td class="comments"></td>
        <td class="view"><a href="https://bigbrain.loris.ca/tissuestack/desktop.html?ds=17&amp;plane=y&amp;x=0.45&amp;y=22.45&amp;z=-17.75&amp;zoom=3" target="_blank">View</a></td>
-       <td class="download"><a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full8_200um_2009b_sym.mnc">Minc<br>(172 MB)</a></td>
-       <td class="download"><a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full8_200um_2009b_sym.nii.gz">NIfTI<br>(164 MB)</a></td>
+       <td class="download"><a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full8_200um_2009b_sym.mnc">Minc<br>(172 MB)</a></td>
+       <td class="download"><a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full8_200um_2009b_sym.nii.gz">NIfTI<br>(164 MB)</a></td>
    </tr>
    <tr>
        <td class="description">Full volume, 200um with optical balancing</td>
@@ -164,8 +164,8 @@
        <td class="encoding">8-bit gray scale unsigned short</td>
        <td class="comments"></td>
        <td class="view"></td>
-       <td class="download"><a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full8_200um_optbal_2009b_sym.mnc">Minc<br>(156 MB)</a></td>
-       <td class="download"><a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full8_200um_optbal_2009b_sym.nii.gz">NIfTI<br>(156 MB)</a></td>
+       <td class="download"><a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full8_200um_optbal_2009b_sym.mnc">Minc<br>(156 MB)</a></td>
+       <td class="download"><a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full8_200um_optbal_2009b_sym.nii.gz">NIfTI<br>(156 MB)</a></td>
    </tr>
    <tr>
       <td class="description">Full volume, 300um without optical balancing</td>
@@ -176,12 +176,12 @@
             <a href="https://bigbrain.loris.ca/tissuestack/desktop.html?ds=8&amp;plane=y&amp;x=0.3&amp;y=22.4&amp;z=-17.7&amp;zoom=3" target="_blank">View</a>
        </td>
       <td class="download">
-          <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full8_300um_2009b_sym.mnc">
+          <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full8_300um_2009b_sym.mnc">
               Minc<br>(54 MB)
          </a>
      </td>
      <td class="download">
-          <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full8_300um_2009b_sym.nii.gz">
+          <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full8_300um_2009b_sym.nii.gz">
               NIfTI<br>(51 MB)
          </a>
      </td>
@@ -194,12 +194,12 @@
         <td class="view">
        </td>
         <td class="download">
-            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full8_300um_optbal_2009b_sym.mnc">
+            <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full8_300um_optbal_2009b_sym.mnc">
                 Minc<br>(49 MB)
            </a>
        </td>
        <td class="download">
-            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full8_300um_optbal_2009b_sym.nii.gz">
+            <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full8_300um_optbal_2009b_sym.nii.gz">
                 NIfTI<br>(48 MB)
            </a>
        </td>
@@ -213,10 +213,10 @@
             <a href="https://bigbrain.loris.ca/tissuestack/desktop.html?ds=1&amp;plane=y&amp;x=0.75&amp;y=22.75&amp;z=-17.65&amp;zoom=3" target="_blank">View</a>
        </td>
         <td class="download">
-            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full8_400um_2009b_sym.mnc">Minc<br>(24 MB)</a>
+            <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full8_400um_2009b_sym.mnc">Minc<br>(24 MB)</a>
        </td>
        <td class="download">
-            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full8_400um_2009b_sym.nii.gz">NIfTI<br>(22 MB)</a>
+            <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full8_400um_2009b_sym.nii.gz">NIfTI<br>(22 MB)</a>
        </td>
    </tr>
    <tr>
@@ -227,10 +227,10 @@
         <td class="view">
        </td>
         <td class="download">
-            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full8_400um_optbal_2009b_sym.mnc">Minc<br>(21 MB)</a>
+            <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full8_400um_optbal_2009b_sym.mnc">Minc<br>(21 MB)</a>
        </td>
        <td class="download">
-            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full8_400um_optbal_2009b_sym.nii.gz">NIfTI<br>(21 MB)</a>
+            <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full8_400um_optbal_2009b_sym.nii.gz">NIfTI<br>(21 MB)</a>
        </td>
    </tr>
    <tr>
@@ -241,7 +241,7 @@
         <td class="view">
             <a href="https://bigbrain.loris.ca/tissuestack/desktop.html?ds=21&amp;plane=y&amp;x=0.5&amp;y=22.5&amp;z=-18&amp;zoom=3" target="_blank">View</a>
        </td>
-        <td class="download">{*<a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=mni_icbm152_t1_tal_nlin_sym_09b_hires.mnc">Minc</a>*}</td>
+        <td class="download">{*<a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/mni_icbm152_t1_tal_nlin_sym_09b_hires.mnc">Minc</a>*}</td>
         <td></td>
    </tr>
     <tr>
@@ -258,9 +258,9 @@
             <a href="https://bigbrain.loris.ca/tissuestack/desktop.html?ds=19&amp;plane=y&amp;x=21.148&amp;y=-136.902&amp;z=47.357&amp;zoom=3" target="_blank">View</a>
         </td>
         <td class="download">
-            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full-xz-avg9-pad20_n3_csffill_regSyn24_400um.mnc">Minc<br>(94 MB)</a>
+            <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full-xz-avg9-pad20_n3_csffill_regSyn24_400um.mnc">Minc<br>(94 MB)</a>
         </td>
-        <td class="download"><a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full-xz-avg9-pad20_n3_csffill_regSyn24_400um.nii.gz">NIfTI<br>(94 MB)
+        <td class="download"><a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full-xz-avg9-pad20_n3_csffill_regSyn24_400um.nii.gz">NIfTI<br>(94 MB)
            </a>
        </td>
    </tr>
@@ -273,11 +273,11 @@
            <a href="https://bigbrain.loris.ca/tissuestack/desktop.html?ds=20&amp;plane=y&amp;x=21.148&amp;y=-136.902&amp;z=47.357&amp;zoom=3" target="_blank">View</a>
        </td>
        <td class="download">
-           <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=syn24-average-t1map-lvl2-10.mnc">Minc<br>(104 MB)
+           <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/syn24-average-t1map-lvl2-10.mnc">Minc<br>(104 MB)
        </a>
        </td>
        <td class="download">
-           <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=syn24-average-t1map-lvl2-10.nii.gz">NIfTI<br>(104 MB) </a>
+           <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/syn24-average-t1map-lvl2-10.nii.gz">NIfTI<br>(104 MB) </a>
        </td>
    </tr>
     <tr>
@@ -294,7 +294,7 @@
             <a href="https://bigbrain.loris.ca/tissuestack/desktop.html?ds=12&amp;plane=y&amp;x=-1.067&amp;y=1.722&amp;z=74&amp;zoom=1" target="_blank">View</a>
        </td>
         <td class="download">
-            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full16_100um.mnc">Minc<br>(1459 MB)</a>
+            <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full16_100um.mnc">Minc<br>(1459 MB)</a>
        </td>
        <td>File too large</td>
    </tr>
@@ -306,7 +306,7 @@
         <td class="view">
        </td>
         <td class="download">
-            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full16_100um_optbal.mnc">Minc<br>(1486 MB)</a>
+            <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full16_100um_optbal.mnc">Minc<br>(1486 MB)</a>
        </td>
        <td>File too large</td>
    </tr>
@@ -319,10 +319,10 @@
             <a href="https://bigbrain.loris.ca/tissuestack/desktop.html?ds=16&amp;plane=y&amp;x=-1.067&amp;y=1.822&amp;z=73.8&amp;zoom=3" target="_blank">View</a>
        </td>
         <td class="download">
-            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full16_200um.mnc">Minc<br>(188 MB)</a>
+            <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full16_200um.mnc">Minc<br>(188 MB)</a>
        </td>
        <td class="download">
-            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full16_200um.nii.gz">NIfTI<br>(187 MB)</a>
+            <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full16_200um.nii.gz">NIfTI<br>(187 MB)</a>
        </td>
    </tr>
    <tr>
@@ -334,10 +334,10 @@
             {*<a href="https://bigbrain.loris.ca/tissuestack/desktop.html?ds=16&amp;plane=y&amp;x=-1.067&amp;y=1.822&amp;z=73.8&amp;zoom=3" target="_blank">View</a>*}
        </td>
         <td class="download">
-            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full16_200um_optbal.mnc">Minc<br>(189 MB)</a>
+            <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full16_200um_optbal.mnc">Minc<br>(189 MB)</a>
        </td>
        <td class="download">
-            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full16_200um_optbal.nii.gz">NIfTI<br>(188 MB)</a>
+            <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full16_200um_optbal.nii.gz">NIfTI<br>(188 MB)</a>
        </td>
    </tr>
     <tr>
@@ -349,10 +349,10 @@
             <a href="https://bigbrain.loris.ca/tissuestack/desktop.html?ds=9&amp;plane=y&amp;x=-1.067&amp;y=1.822&amp;z=74.1&amp;zoom=3" target="_blank">View</a>
        </td>
         <td class="download">
-            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full16_300um.mnc">Minc<br>(57 MB)</a>
+            <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full16_300um.mnc">Minc<br>(57 MB)</a>
        </td>
        <td class="download">
-            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full16_300um.nii.gz">NIfTI<br>(56 MB)</a>
+            <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full16_300um.nii.gz">NIfTI<br>(56 MB)</a>
        </td>
    </tr>
    <tr>
@@ -364,10 +364,10 @@
             {*<a href="https://bigbrain.loris.ca/tissuestack/desktop.html?ds=9&amp;plane=y&amp;x=-1.067&amp;y=1.822&amp;z=74.1&amp;zoom=3" target="_blank">View</a>*}
        </td>
         <td class="download">
-            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full16_300um_optbal.mnc">Minc<br>(57 MB)</a>
+            <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full16_300um_optbal.mnc">Minc<br>(57 MB)</a>
        </td>
        <td class="download">
-            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full16_300um_optbal.nii.gz">NIfTI<br>(56 MB)</a>
+            <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full16_300um_optbal.nii.gz">NIfTI<br>(56 MB)</a>
        </td>
    </tr>
     <tr>
@@ -379,10 +379,10 @@
             <a href="https://bigbrain.loris.ca/tissuestack/desktop.html?ds=5&amp;plane=y&amp;x=-1.067&amp;y=2.022&amp;z=73.6&amp;zoom=3" target="_blank">View</a>
        </td>
         <td class="download">
-            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full16_400um.mnc">Minc<br>(24 MB)</a>
+            <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full16_400um.mnc">Minc<br>(24 MB)</a>
        </td>
        <td class="download">
-            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full16_400um.nii.gz">NIfTI<br>(24 MB)</a>
+            <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full16_400um.nii.gz">NIfTI<br>(24 MB)</a>
        </td>
    </tr>
    <tr>
@@ -394,10 +394,10 @@
             {*<a href="https://bigbrain.loris.ca/tissuestack/desktop.html?ds=5&amp;plane=y&amp;x=-1.067&amp;y=2.022&amp;z=73.6&amp;zoom=3" target="_blank">View</a>*}
        </td>
         <td class="download">
-            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full16_400um_optbal.mnc">Minc<br>(24 MB)</a>
+            <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full16_400um_optbal.mnc">Minc<br>(24 MB)</a>
        </td>
        <td class="download">
-            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full16_400um_optbal.nii.gz">NIfTI<br>(24 MB)</a>
+            <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full16_400um_optbal.nii.gz">NIfTI<br>(24 MB)</a>
        </td>
    </tr>
     <tr>
@@ -409,7 +409,7 @@
             <a href="https://bigbrain.loris.ca/tissuestack/desktop.html?ds=14&amp;plane=y&amp;x=-1.067&amp;y=1.722&amp;z=74&amp;zoom=1" target="_blank">View</a>
        </td>
         <td class="download">
-            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full8_100um.mnc">Minc<br>(632 MB)</a>
+            <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full8_100um.mnc">Minc<br>(632 MB)</a>
        </td>
        <td>File too large</td>
    </tr>
@@ -422,7 +422,7 @@
             {*<a href="https://bigbrain.loris.ca/tissuestack/desktop.html?ds=14&amp;plane=y&amp;x=-1.067&amp;y=1.722&amp;z=74&amp;zoom=1" target="_blank">View</a>*}
        </td>
         <td class="download">
-            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full8_100um_optbal.mnc">Minc<br>(634 MB)</a>
+            <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full8_100um_optbal.mnc">Minc<br>(634 MB)</a>
        </td>
        <td>File too large</td>
    </tr>
@@ -435,10 +435,10 @@
             <a href="https://bigbrain.loris.ca/tissuestack/desktop.html?ds=11&amp;plane=y&amp;x=-1.067&amp;y=1.822&amp;z=73.8&amp;zoom=3" target="_blank">View</a>
        </td>
         <td class="download">
-            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full8_200um.mnc">Minc<br>(83 MB)</a>
+            <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full8_200um.mnc">Minc<br>(83 MB)</a>
        </td>
        <td class="download">
-            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full8_200um.nii.gz">NIfTI<br>(82 MB)</a>
+            <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full8_200um.nii.gz">NIfTI<br>(82 MB)</a>
        </td>
    </tr>
    <tr>
@@ -450,10 +450,10 @@
             {*<a href="https://bigbrain.loris.ca/tissuestack/desktop.html?ds=11&amp;plane=y&amp;x=-1.067&amp;y=1.822&amp;z=73.8&amp;zoom=3" target="_blank">View</a>*}
        </td>
         <td class="download">
-            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full8_200um_optbal.mnc">Minc<br>(82 MB)</a>
+            <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full8_200um_optbal.mnc">Minc<br>(82 MB)</a>
        </td>
        <td class="download">
-            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full8_200um_optbal.nii.gz">NIfTI<br>(80 MB)</a>
+            <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full8_200um_optbal.nii.gz">NIfTI<br>(80 MB)</a>
        </td>
    </tr>
     <tr>
@@ -465,10 +465,10 @@
             <a href="https://bigbrain.loris.ca/tissuestack/desktop.html?ds=7&amp;plane=y&amp;x=-1.067&amp;y=1.822&amp;z=74.1&amp;zoom=3" target="_blank">View</a>
        </td>
         <td class="download">
-            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full8_300um.mnc">Minc<br>(25 MB)</a>
+            <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full8_300um.mnc">Minc<br>(25 MB)</a>
        </td>
        <td class="download">
-            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full8_300um.nii.gz">NIfTI<br>(25 MB)</a>
+            <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full8_300um.nii.gz">NIfTI<br>(25 MB)</a>
        </td>
    </tr>
    <tr>
@@ -480,10 +480,10 @@
             {*<a href="https://bigbrain.loris.ca/tissuestack/desktop.html?ds=7&amp;plane=y&amp;x=-1.067&amp;y=1.822&amp;z=74.1&amp;zoom=3" target="_blank">View</a>*}
        </td>
         <td class="download">
-            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full8_300um_optbal.mnc">Minc<br>(25 MB)</a>
+            <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full8_300um_optbal.mnc">Minc<br>(25 MB)</a>
        </td>
        <td class="download">
-            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full8_300um_optbal.nii.gz">NIfTI<br>(24 MB)</a>
+            <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full8_300um_optbal.nii.gz">NIfTI<br>(24 MB)</a>
        </td>
    </tr>
     <tr>
@@ -495,10 +495,10 @@
             <a href="https://bigbrain.loris.ca/tissuestack/desktop.html?ds=4&amp;plane=y&amp;x=-1.067&amp;y=2.022&amp;z=73.6&amp;zoom=3" target="_blank">View</a>
        </td>
         <td class="download">
-            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full8_400um.mnc">Minc<br>(11 MB)</a>
+            <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full8_400um.mnc">Minc<br>(11 MB)</a>
        </td>
        <td class="download">
-            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full8_400um.nii.gz">NIfTI<br>(11 MB)</a>
+            <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full8_400um.nii.gz">NIfTI<br>(11 MB)</a>
        </td>
    </tr>
     <tr>
@@ -510,10 +510,10 @@
             {*<a href="https://bigbrain.loris.ca/tissuestack/desktop.html?ds=4&amp;plane=y&amp;x=-1.067&amp;y=2.022&amp;z=73.6&amp;zoom=3" target="_blank">View</a>*}
        </td>
         <td class="download">
-            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full8_400um_optbal.mnc">Minc<br>(11 MB)</a>
+            <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full8_400um_optbal.mnc">Minc<br>(11 MB)</a>
        </td>
        <td class="download">
-            <a href="{$url}/AjaxHelper.php?Module=brainvolumes&get_volume.php&script=get_volume.php&release=2013&file=full8_400um_optbal.nii.gz">NIfTI<br>(11 MB)</a>
+            <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2013/3D_Volumes/full8_400um_optbal.nii.gz">NIfTI<br>(11 MB)</a>
        </td>
    </tr>
    </tbody>
