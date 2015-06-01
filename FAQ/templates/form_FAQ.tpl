@@ -3,13 +3,12 @@
 FAQ
 </h1>
 <h3>
-
 Below you will find answers to some frequently Asked Questions
 </h3>
 
 <dl class="question">
     <dt>What is the bigbrain?</dt>
-    <dd>The bigbrain is the brain of a 65yo woman with no neurological or psychiatric
+    <dd>The bigbrain is the brain of a 65yo man with no neurological or psychiatric
        diseases in clinical records at time of death. The brain was embedded in
        parafin and sectionned in 7404 coronal histological sections (20 microns),
        stained for cell bodies. The bigbrain is the digitized reconstruction of
