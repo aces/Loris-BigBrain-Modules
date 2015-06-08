@@ -42,7 +42,7 @@ var BigBrain = BigBrain || {};
     var sliceDrag = false;
     var sliceZoom = false;
     var lastDraw = new Date().getTime();
-    var loadingHighRes = false;
+    var loadingHighRes = false; //flag to indicate loading high res image
     var xmlHTTP = new XMLHttpRequest();
     var redraw = function(cSlice, sctx, sCanvas, force) {
         return function() {
@@ -103,66 +103,66 @@ var BigBrain = BigBrain || {};
                 return;
             }
             if(loadingHighRes){
+                //if desired slice changed during loading the high
+                //res img abort loading the img
                 xmlHTTP.abort();
-                loadingHighRes = false;
-	    }
+                loadingHighRes = false; //reset flag
+	        }
 
             var coord = getCursorPosition(e);
             selectFromCoord(coord.x);
             drag = false;
             var closure = function(cSlice, sctx, sCanvas, dataURL) {
-                //return function(data) {
-                    if(currentSlice !== cSlice || sctx !== slicectx || sliceCanvas !== sCanvas || !loadingHighRes) {
-                        return;
-                    }
-                    var load = document.getElementById("loading");
-                    var bold = document.createElement('b');
+                if(currentSlice !== cSlice || sctx !== slicectx
+                    || sliceCanvas !== sCanvas || !loadingHighRes) {
+                    return;
+                }
+                var load = document.getElementById("loading");
+                var bold = document.createElement('b');
 
-                    //load.textContent = "Loading hi resolution image...";
-                    load.innerHTML = "<b>Loading high-res image...</b>";
-                    cSlice.onload = redraw(cSlice, slicectx, sliceCanvas, false);
-                    cSlice.addEventListener('load', function() {
-                        load.textContent = '';
-			loadingHighRes = false;
-                    });
-                    //cSlice.src = 'data:image/jpeg;base64,' + btoa(data);
-                    cSlice.src = dataURL;
-                //}
+                load.innerHTML = "<b>Loading high-res image...</b>";
+                cSlice.onload = redraw(cSlice, slicectx, sliceCanvas, false);
+                cSlice.addEventListener('load', function() {
+                    load.textContent = '';
+		            loadingHighRes = false;
+                });
+                cSlice.src = dataURL;
             };
             if(currentSlice.sliceId > 0 && currentSlice.sliceId <= numSlices && !loadingHighRes) {
 
-		loadingHighRes = true;
-                
-    xmlHTTP.open('GET',"AjaxHelper.php?Module=bigbrain&script=get_slice_full.php&release=2013&sliceID=" + currentSlice.sliceId,true);
+                //set the loading high res flag
+		        loadingHighRes = true;
 
-    // Must include this line - specifies the response type we want
-    xmlHTTP.responseType = 'arraybuffer';
+                xmlHTTP.open('GET',"AjaxHelper.php?Module=bigbrain&script=get_slice_full.php&release=2013&sliceID=" + currentSlice.sliceId,true);
 
-    xmlHTTP.onload = function(e)
-    {
+                // Must include this line - specifies the response type we want
+                xmlHTTP.responseType = 'arraybuffer';
 
-        var arr = new Uint8Array(this.response);
+                xmlHTTP.onload = function(e)
+                {
+
+                    var arr = new Uint8Array(this.response);
 
 
-        // Convert the int array to a binary string
-        // We have to use apply() as we are converting an *array*
-        // and String.fromCharCode() takes one or more single values, not
-        // an array.
-        var raw = '';
-    var i,j,subArray,chunk = 5000;
-    for (i=0,j=arr.length; i<j; i+=chunk) {
-       subArray = arr.subarray(i,i+chunk);
-       raw += String.fromCharCode.apply(null, subArray);
-    }   
+                    // Convert the int array to a binary string
+                    // We have to use apply() as we are converting an *array*
+                    // and String.fromCharCode() takes one or more single values, not
+                    // an array.
+                    var raw = '';
+                    var i,j,subArray,chunk = 5000;
+                    for (i=0,j=arr.length; i<j; i+=chunk) {
+                       subArray = arr.subarray(i,i+chunk);
+                       raw += String.fromCharCode.apply(null, subArray);
+                    }
 
-        // This works!!!
-        var b64=btoa(raw);
-        var dataURL="data:image/png;base64,"+b64;
-        closure(currentSlice, slicectx, sliceCanvas, dataURL);
-        //document.getElementById("image").src = dataURL;
-    };
+                    // This works!!!
+                    var b64=btoa(raw);
+                    var dataURL="data:image/png;base64,"+b64;
+                    closure(currentSlice, slicectx, sliceCanvas, dataURL);
+                    //document.getElementById("image").src = dataURL;
+                };
 
-    xmlHTTP.send();
+                xmlHTTP.send();
 
 
                 //closure(currentSlice, slicectx, sliceCanvas);
