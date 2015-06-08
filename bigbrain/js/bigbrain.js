@@ -42,14 +42,10 @@ var BigBrain = BigBrain || {};
     var sliceDrag = false;
     var sliceZoom = false;
     var lastDraw = new Date().getTime();
+    var loadingHighRes = false;
+    var xmlHTTP = new XMLHttpRequest();
     var redraw = function(cSlice, sctx, sCanvas, force) {
         return function() {
-            // Throttle how often this fires, just return if
-            // we've drawn recently..
-            var now = new Date().getTime();
-            if(force !== true && ( (now - lastDraw) < 100)) {
-                return;
-            }
             if(cSlice !== currentSlice) {
                 return;
             }
@@ -72,7 +68,6 @@ var BigBrain = BigBrain || {};
                     return;
                 }
                 sctx.drawImage(cSlice,0,0, sCanvas.width, sCanvas.height);
-                lastDraw = now;
             }
         }
     };
@@ -107,12 +102,17 @@ var BigBrain = BigBrain || {};
             if(drag === false) {
                 return;
             }
+            if(loadingHighRes){
+                xmlHTTP.abort();
+                loadingHighRes = false;
+	    }
+
             var coord = getCursorPosition(e);
             selectFromCoord(coord.x);
             drag = false;
-            var closure = function(cSlice, sctx, sCanvas) {
-                return function(data) {
-                    if(currentSlice !== cSlice || sctx !== slicectx || sliceCanvas !== sCanvas) {
+            var closure = function(cSlice, sctx, sCanvas, dataURL) {
+                //return function(data) {
+                    if(currentSlice !== cSlice || sctx !== slicectx || sliceCanvas !== sCanvas || !loadingHighRes) {
                         return;
                     }
                     var load = document.getElementById("loading");
@@ -123,12 +123,50 @@ var BigBrain = BigBrain || {};
                     cSlice.onload = redraw(cSlice, slicectx, sliceCanvas, false);
                     cSlice.addEventListener('load', function() {
                         load.textContent = '';
+			loadingHighRes = false;
                     });
-                    cSlice.src = "AjaxHelper.php?Module=bigbrain&script=get_slice_full.php&release=2013&sliceID=" + cSlice.sliceId;
-                }
+                    //cSlice.src = 'data:image/jpeg;base64,' + btoa(data);
+                    cSlice.src = dataURL;
+                //}
             };
-            if(currentSlice.sliceId > 0 && currentSlice.sliceId <= numSlices) {
-                $.get('/AjaxHelper.php?Module=bigbrain&script=get_slice_full.php', { sliceID: currentSlice.sliceId, release: 2013 }, closure(currentSlice, slicectx, sliceCanvas));
+            if(currentSlice.sliceId > 0 && currentSlice.sliceId <= numSlices && !loadingHighRes) {
+
+		loadingHighRes = true;
+                
+    xmlHTTP.open('GET',"AjaxHelper.php?Module=bigbrain&script=get_slice_full.php&release=2013&sliceID=" + currentSlice.sliceId,true);
+
+    // Must include this line - specifies the response type we want
+    xmlHTTP.responseType = 'arraybuffer';
+
+    xmlHTTP.onload = function(e)
+    {
+
+        var arr = new Uint8Array(this.response);
+
+
+        // Convert the int array to a binary string
+        // We have to use apply() as we are converting an *array*
+        // and String.fromCharCode() takes one or more single values, not
+        // an array.
+        var raw = '';
+    var i,j,subArray,chunk = 5000;
+    for (i=0,j=arr.length; i<j; i+=chunk) {
+       subArray = arr.subarray(i,i+chunk);
+       raw += String.fromCharCode.apply(null, subArray);
+    }   
+
+        // This works!!!
+        var b64=btoa(raw);
+        var dataURL="data:image/png;base64,"+b64;
+        closure(currentSlice, slicectx, sliceCanvas, dataURL);
+        //document.getElementById("image").src = dataURL;
+    };
+
+    xmlHTTP.send();
+
+
+                //closure(currentSlice, slicectx, sliceCanvas);
+                //$.get('/AjaxHelper.php?Module=bigbrain&script=get_slice_full.php', { sliceID: currentSlice.sliceId, release: 2013 }, closure(currentSlice, slicectx, sliceCanvas));
             }
         });
         var oldpos = [];
