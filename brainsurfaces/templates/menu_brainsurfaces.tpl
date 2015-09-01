@@ -63,10 +63,10 @@
       <td class="view">
       </td>
       <td class="download">
-        <a href="{$url}/AjaxHelper.php?Module=brainsurfaces&get_surfaces.php&script=get_surfaces.php&release=2013&file=white_left_327680_2009b_sym.obj">Obj<br>(18 MB)</a>
+        <a href="{$url}/AjaxHelper.php?Module=brainsurfaces&get_surfaces.php&script=get_surfaces.php&release=2013&file=white_right_327680_2009b_sym.obj">Obj<br>(18 MB)</a>
       </td>
       <td class="download">
-        <a href="{$url}/AjaxHelper.php?Module=brainsurfaces&get_surfaces.php&script=get_surfaces.php&release=2013&file=white_left_327680_2009b_sym.gii">GifTi<br>(8 MB)</a>
+        <a href="{$url}/AjaxHelper.php?Module=brainsurfaces&get_surfaces.php&script=get_surfaces.php&release=2013&file=white_right_327680_2009b_sym.gii">GifTi<br>(8 MB)</a>
       </td>
     </tr>
     <tr>
