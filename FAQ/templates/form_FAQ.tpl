@@ -71,6 +71,6 @@ Below you will find answers to some frequently Asked Questions
     <dd>No.</dd>
 
     <dt>Is there a way to mass-download the data files?</dt>
-    <dd> Yes. As of March 12th, 2014, all sections and volumes are available on an anonymous FTP server located at the same address as this site. We recommand connecting to the FTP server using a command line or GUI client, but not a web browser.</dd>
+    <dd> Yes. As of March 12th, 2014, all sections and volumes are available on an <a href='ftp://bigbrain.loris.ca'>anonymous FTP</a> server located at the same address as this site. We recommand connecting to the FTP server using a command line or GUI client, but not a web browser.</dd>
 </dl>
 {/literal}
