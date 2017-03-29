@@ -69,8 +69,11 @@ Below you will find answers to some frequently Asked Questions
 
 
     <dt>Is there an MRI of the bigbrain?</dt>
-    <dd>Yes, there is one of the fixed brain, but it is of poor quality. It should
-    be made available soon.</dd>
+    <dd>Yes, there is one of the fixed brain (removed from skull). It has an
+    isotropic voxel size resolution of 0.444mm, and is available in the
+    Raw_Data/MRI subdirectory. Note that the current version is in 
+    "processing space" with y-z axes flipped. A new one in proper histological
+    space will be supplied soon.</dd>
 
     <dt> How can I view the volumes as in the bigbrain videos?</dt>
     <dd> The bigbrain videos were created using Atelier3D, a licensed software which
