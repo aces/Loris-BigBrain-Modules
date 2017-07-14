@@ -11,7 +11,7 @@ Below you will find answers to some frequently Asked Questions
         <div class="panel-heading">
             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
                 <h3 class="panel-title">
-                    What is the bigbrain
+                    What is the bigbrain?
                 </h3>
             </a>
         </div>
@@ -101,7 +101,7 @@ Below you will find answers to some frequently Asked Questions
         </div>
         <div id="collapseSeven" class="panel-collapse collapse">
             <div class="panel-body">
-                The web-based viewer is TissueStack. Documentation is available at <a href="http://www.tissuestack.org/">at the TissueStack site</a>. As you will soon discover, there is a limitation in the zoom factor in TissueStack.
+                The web-based viewer is TissueStack. Documentation is available at <a href="http://www.tissuestack.org/">at the TissueStack site</a>. There is a limitation in the zoom factor in TissueStack.
             </div>
         </div>
     </div>
@@ -115,7 +115,7 @@ Below you will find answers to some frequently Asked Questions
         </div>
         <div id="collapseEight" class="panel-collapse collapse">
             <div class="panel-body">
-                TThe OBJ surfaces are viewable in <a href="https://brainbrowser.cbrain.mcgill.ca">Brainbrowser</a>, <a href="http://www.math.mcgill.ca/keith/surfstat">Surfstat (MATLAB-based) toolbox</a>, <a href="https://wiki.mouseimaging.ca/display/MICePub/brain-view">brain-view</a>, overlaid on the corresponding volume in Display, etc.
+                The OBJ surfaces are viewable in <a href="https://brainbrowser.cbrain.mcgill.ca">Brainbrowser</a>, <a href="http://www.math.mcgill.ca/keith/surfstat">Surfstat (MATLAB-based) toolbox</a>, <a href="https://wiki.mouseimaging.ca/display/MICePub/brain-view">brain-view</a>, overlaid on the corresponding volume in Display, etc.
             </div>
         </div>
     </div>
