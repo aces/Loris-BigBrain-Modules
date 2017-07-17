@@ -14,11 +14,25 @@ BigBrain
 </br>
 </br>
 
+<div class="row">
+    <div class="col-xs-2">
+        <label>Select Viewer</label>
+    </div>
+    <div class="col-xs-4">
+        <select id="viewerSelect" class="form-control">
+            <option value=0>Coronal</option>
+            <option value=1>Sagittal</option>
+            <option value=2>Axial</option>
+        </select>
+    </div>
+</div>
+
 <div id="content" style="height:460px">
     <div id="viewer" style="margin-top: 20px; position:absolute;">
         <div id="navigation">
 	    <button type="button" name="button" class="button" id="prevslice">Previous Section</button>
 	    <button type="button" name="button" class="button" id="nextslice">Next Section</button>
+	    <button type="button" name="button" class="button" id="getHighRes">Show High Resolution Image</button>
             <span id="loading">&nbsp;</span>
 	    <div>&nbsp;</div>
         </div>

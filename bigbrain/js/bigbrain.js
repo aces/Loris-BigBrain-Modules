@@ -44,6 +44,10 @@ var BigBrain = BigBrain || {};
     var lastDraw = new Date().getTime();
     var loadingHighRes = false; //flag to indicate loading high res image
     var xmlHTTP = new XMLHttpRequest();
+    var viewerIndex = 0;
+    var viewer = [{type: 'Coronal', numSlices: '7404', selectorImg: 'sagital.png'},
+                  {type: 'Sagittal', numSlices: '6572', selectorImg: 'coronal.png'},
+                  {type: 'Axial', numSlices: '5711', selectorImg: 'coronal.png'}];
     var redraw = function(cSlice, sctx, sCanvas, force) {
         return function() {
             if(cSlice !== currentSlice) {
@@ -95,22 +99,107 @@ var BigBrain = BigBrain || {};
         $(selectorCanvas).mousemove(function(e) {
             if(drag) {
                 var coord = getCursorPosition(e);
-                selectFromCoord(coord.x);
+                if(viewerIndex == 2){
+                    selectFromCoord(coord.y);
+		} else {                
+                    selectFromCoord(coord.x);
+                }
+            }
+        });
+        $("#viewerSelect").change(function(){
+            viewerIndex = this.value;
+             selectorCanvas = document.getElementById('selectorView');
+     sliceCanvas = document.getElementById('sliceView');
+     selectorImg = new Image();
+     selectorImg.src = "/images/bigbrain-" + viewer[viewerIndex].selectorImg;
+     selectorImg.onload = function() {
+         initSelector(selectorImg);
+         initSlices(3000);
+     };
+        });
+	$("#getHighRes").click(function(){
+            var closure = function(cSlice, sctx, sCanvas, dataURL) {
+        if(currentSlice !== cSlice || sctx !== slicectx
+            || sliceCanvas !== sCanvas || !loadingHighRes) {
+                 return;
+        }
+        cSlice.onload = redraw(cSlice, slicectx, sliceCanvas, false);
+        cSlice.addEventListener('load', function() {
+            load.textContent = '';
+            loadingHighRes = false;
+        });
+        cSlice.src = dataURL;
+   };
+            if(currentSlice.sliceId > 0 && currentSlice.sliceId <= numSlices && !loadingHighRes) {
+
+                //set the loading high res flag
+	        loadingHighRes = true;
+                var load = document.getElementById("loading");
+                load.innerHTML = "<b>Loading high-res image...</b>";
+		var sliceID = currentSlice.sliceId;
+                if(viewerIndex == 2){
+                    sliceID = 5711 - sliceID
+                }                
+ 
+                xmlHTTP.open('GET',"AjaxHelper.php?Module=bigbrain&script=get_slice_full.php&release=2015&sliceID=" + sliceID + "&type=" + viewer[viewerIndex].type,true);
+
+                // Must include this line - specifies the response type we want
+                xmlHTTP.responseType = 'arraybuffer';
+
+                xmlHTTP.onload = function(e)
+                {
+
+                    var arr = new Uint8Array(this.response);
+
+
+                    // Convert the int array to a binary string
+                    // We have to use apply() as we are converting an *array*
+                    // and String.fromCharCode() takes one or more single values, not
+                    // an array.
+                    var raw = '';
+                    var i,j,subArray,chunk = 5000;
+                    for (i=0,j=arr.length; i<j; i+=chunk) {
+                       subArray = arr.subarray(i,i+chunk);
+                       raw += String.fromCharCode.apply(null, subArray);
+                    }
+
+                    // This works!!!
+                    var b64=btoa(raw);
+                    var dataURL="data:image/png;base64,"+b64;
+                     var resolution = document.getElementById("reso");
+                    resolution.innerHTML = "20"
+                    closure(currentSlice, slicectx, sliceCanvas, dataURL);
+                    //document.getElementById("image").src = dataURL;
+                };
+
+                xmlHTTP.send();
+
+
+                //closure(currentSlice, slicectx, sliceCanvas);
+                //$.get('/AjaxHelper.php?Module=bigbrain&script=get_slice_full.php', { sliceID: currentSlice.sliceId, release: 2015 }, closure(currentSlice, slicectx, sliceCanvas));
             }
         });
         $(selectorCanvas).mouseup(function(e) {
             if(drag === false) {
                 return;
             }
+             var resolution = document.getElementById("reso");
+                    resolution.innerHTML = "??"
             if(loadingHighRes){
                 //if desired slice changed during loading the high
                 //res img abort loading the img
                 xmlHTTP.abort();
+                var load =  document.getElementById("loading");
+                load.innerHTML = "";
                 loadingHighRes = false; //reset flag
 	        }
 
             var coord = getCursorPosition(e);
-            selectFromCoord(coord.x);
+            if(viewerIndex == 2){
+                selectFromCoord(coord.y);
+            } else {
+                selectFromCoord(coord.x);
+            }
             drag = false;
             var closure = function(cSlice, sctx, sCanvas, dataURL) {
                 if(currentSlice !== cSlice || sctx !== slicectx
@@ -128,12 +217,13 @@ var BigBrain = BigBrain || {};
                 });
                 cSlice.src = dataURL;
             };
-            if(currentSlice.sliceId > 0 && currentSlice.sliceId <= numSlices && !loadingHighRes) {
+/*  
+          if(currentSlice.sliceId > 0 && currentSlice.sliceId <= numSlices && !loadingHighRes) {
 
                 //set the loading high res flag
 		        loadingHighRes = true;
 
-                xmlHTTP.open('GET',"AjaxHelper.php?Module=bigbrain&script=get_slice_full.php&release=2013&sliceID=" + currentSlice.sliceId,true);
+                xmlHTTP.open('GET',"AjaxHelper.php?Module=bigbrain&script=get_slice_full.php&release=2015&sliceID=" + currentSlice.sliceId + "&type=" + viewer[viewerIndex].type, true);
 
                 // Must include this line - specifies the response type we want
                 xmlHTTP.responseType = 'arraybuffer';
@@ -166,8 +256,9 @@ var BigBrain = BigBrain || {};
 
 
                 //closure(currentSlice, slicectx, sliceCanvas);
-                //$.get('/AjaxHelper.php?Module=bigbrain&script=get_slice_full.php', { sliceID: currentSlice.sliceId, release: 2013 }, closure(currentSlice, slicectx, sliceCanvas));
+                //$.get('/AjaxHelper.php?Module=bigbrain&script=get_slice_full.php', { sliceID: currentSlice.sliceId, release: 2015 }, closure(currentSlice, slicectx, sliceCanvas));
             }
+*/
         });
         var oldpos = [];
         var pos = [];
@@ -271,7 +362,7 @@ var BigBrain = BigBrain || {};
      selectorCanvas = selector;
      sliceCanvas = slice;
      selectorImg = new Image();
-     selectorImg.src = "/images/bigbrain-sagital.png";
+     selectorImg.src = "/images/bigbrain-" + viewer[viewerIndex].selectorImg;
      selectorImg.onload = function() {
          initSelector(selectorImg);
          initSlices(num);
@@ -302,7 +393,11 @@ var BigBrain = BigBrain || {};
      selectctx.fillRect(0,0,selectorCanvas.width,selectorCanvas.height);
      selectctx.drawImage(selectorImg,0,0);
      selectctx.fillStyle = "#FF9900";
-     selectctx.fillRect(x,0,1,selectHeight);
+     if(viewerIndex == 2){
+         selectctx.fillRect(0,x,selectorCanvas.width,1);
+     } else {
+         selectctx.fillRect(x,0,1,selectHeight);
+     }
 
      if(currentSlice && currentSlice.hires === true) {
          factor = 13.15;
@@ -315,12 +410,20 @@ var BigBrain = BigBrain || {};
 
      currentSlice.onload = function(img) {
          slicectx.drawImage(currentSlice,0,0);
-         window.history.replaceState({},"",'\?test_name=bigbrain&slice='+num);
+         sliceID = num;
+         if(viewerIndex == 2) {
+             sliceID = 5711 - sliceID;
+         }
+         window.history.replaceState({},"",'\?test_name=bigbrain&slice='+sliceID);
          BigBrain.afterSelectSlice(num);
      };
 
-     //currentSlice.src = '/images/bigbrain-sagital.png';
-     currentSlice.src = '/images/slices/pm' + padNumber(num,4) + 'o.png';
+     //currentSlice.src = '/images/bigbrain-sagital.png'
+     sliceID = num;
+         if(viewerIndex == 2) {
+             sliceID = 5711 - sliceID;
+         };
+     currentSlice.src = '/images/slices/' + viewer[viewerIndex].type + '/pm' + padNumber(sliceID,4) + 'o.png';
      currentSlice.hires = false;
 
  }
@@ -411,7 +514,7 @@ var BigBrain = BigBrain || {};
      num = parseInt(num, 10);
      var nextSlice, prevSlice;
      var data = $("#sliceData");
-     data.html(" <span style=\"font-weight: bold\"><a href=\"/AjaxHelper.php?Module=bigbrain&script=get_slice.php&release=2013&sliceID=" + num + "\">Download histology MNC</a></span></br></br><span style=\"font-weight: bold\"><a href=\"/AjaxHelper.php?Module=bigbrain&script=get_slice_full.php&release=2013&sliceID=" + num + "\">Download histology PNG</a></span>"); 
+     data.html(" <span style=\"font-weight: bold\"><a href=\"/AjaxHelper.php?Module=bigbrain&script=get_slice.php&release=2015&sliceID=" + num + "\">Download histology MNC</a></span></br></br><span style=\"font-weight: bold\"><a href=\"/AjaxHelper.php?Module=bigbrain&script=get_slice_full.php&release=2015&sliceID=" + num + "\">Download histology PNG</a></span>"); 
 
 //     data = $("#sliceViewLink");
 //     data.html("<span style=\"font-weight: bold\"><a href=\"/mri_browser.php?sessionID=" + num + "\">View in Imaging Browser</a></span>");
