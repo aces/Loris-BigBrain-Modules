@@ -6,7 +6,6 @@ FAQ
 Below you will find answers to some frequently Asked Questions
 </h3>
 
-<<<<<<< HEAD
 <div class="panel-group" id="accordion">
     <div class="panel panel-default">
         <div class="panel-heading">
