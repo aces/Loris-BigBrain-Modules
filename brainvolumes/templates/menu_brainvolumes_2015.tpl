@@ -117,8 +117,8 @@
            <td class="resolution">500um isotropic</td>
            <td class="encoding">8-bit gray scale unsigned byte</td>
            <td class="comments">For more info, please see the <a href="http://www.bic.mni.mcgill.ca/ServicesAtlases/ICBM152NLin2009">BIC page</a></td>
-           <td class="download"><a href="ftp://bigbrain.loris.ca/BigBrainRelease.2015/MNI-ICBM152_Space/3D_Volumes/mni_icbm152_t1_tal_nlin_sym_09b_hires.mnc">Minc<br>(120 MB)</a></td>
-           <td class="download"><a href="ftp://bigbrain.loris.ca/BigBrainRelease.2015/MNI-ICBM152_Space/3D_Volumes/mni_icbm152_t1_tal_nlin_sym_09b_hires.nii">NIfTI<br>(120 MB)</a></td>
+           <td class="download"><a href="ftp://bigbrain.loris.ca/BigBrainRelease.2015/3D_Volumes/MNI-ICBM152_Space/mni_icbm152_t1_tal_nlin_sym_09b_hires.mnc">Minc<br>(120 MB)</a></td>
+           <td class="download"><a href="ftp://bigbrain.loris.ca/BigBrainRelease.2015/3D_Volumes/MNI-ICBM152_Space/mni_icbm152_t1_tal_nlin_sym_09b_hires.nii">NIfTI<br>(120 MB)</a></td>
    </tr>
     <tr>
         <th class="info" colspan="4" >MNI ADNI Space</th>
