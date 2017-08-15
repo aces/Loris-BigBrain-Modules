@@ -96,14 +96,6 @@
 
 
     <tr>
-      <th class="info" colspan="5">7T syn24 template in MNI Space</th>
-      <th class="header">Minc</th>
-      <th class="header">NIfTI</th>
-    </tr>
-    <tr>
-      <td colspan="8">No Data</td>
-    </tr>
-    <tr>
       <th class="info" colspan="5" >Histological Space</th>
       <th class="header">Minc</th>
       <th class="header">NIfTI</th>
