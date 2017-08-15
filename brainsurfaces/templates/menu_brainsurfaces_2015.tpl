@@ -27,7 +27,7 @@
         <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2015/3D_Surfaces/Apr7_2016/MNI-obj/gray_left_327680_2009b_sym.obj">Obj<br>(17.0 MB)</a>
       </td>
       <td class="download">
-        NA
+        <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2015/3D_Surfaces/Apr7_2016/gii/gray_left_327680_2009b_sym.gii">Obj<br>(7.5 MB)</a>
       </td>
     </tr>
     <tr>
@@ -40,7 +40,7 @@
         <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2015/3D_Surfaces/Apr7_2016/MNI-obj/gray_right_327680_2009b_sym.obj">Obj<br>(16.9 MB)</a>
       </td>
       <td class="download">
-        NA
+        <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2015/3D_Surfaces/Apr7_2016/gii/gray_right_327680_2009b_sym.gii">Obj<br>(7.5 MB)</a>
       </td>
     </tr>
     <tr>
@@ -53,7 +53,7 @@
         <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2015/3D_Surfaces/Apr7_2016/MNI-obj/white_left_327680_2009b_sym.obj">Obj<br>(17.0 MB)</a>
       </td>
       <td class="download">
-        NA
+        <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2015/3D_Surfaces/Apr7_2016/gii/white_left_327680_2009b_sym.gii">Obj<br>(7.5 MB)</a>
       </td>
     </tr>
     <tr>
@@ -66,7 +66,7 @@
         <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2015/3D_Surfaces/Apr7_2016/MNI-obj/white_right_327680_2009b_sym.obj">Obj<br>(16.9 MB)</a>
       </td>
       <td class="download">
-        NA
+        <a href="ftp://bigbrain.loris.ca/BigBrainRelease.2015/3D_Surfaces/Apr7_2016/gii/white_right_327680_2009b_sym.gii">Obj<br>(7.5 MB)</a>
       </td>
     </tr>
     <tr>
