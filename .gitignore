@@ -10,3 +10,6 @@ userdownloads/
 ChangeLog
 LICENSE
 README.md
+*.bak
+*.tmp
+*.old
