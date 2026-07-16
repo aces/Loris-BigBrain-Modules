@@ -1,1 +1,12 @@
 *.un~
+docs/
+logs/
+modules-loris/
+project/config.xml
+SQL/
+test/
+tools/
+userdownloads/
+ChangeLog
+LICENSE
+README.md
