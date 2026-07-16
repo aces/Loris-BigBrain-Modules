@@ -1,0 +1,17 @@
+.question dt {
+    font-weight: normal;
+}
+
+.question dt:before {
+    content: "Q: ";
+    font-weight: bold;
+}
+
+.question dd {
+    padding-bottom: 20px;
+}
+
+.question dd:before {
+    content: "A: ";
+    font-weight: bold;
+}
