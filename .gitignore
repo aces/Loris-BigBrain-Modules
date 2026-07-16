@@ -13,4 +13,4 @@ README.md
 *.bak
 *.tmp
 *.old
-smarty_templates_c
+smarty/templates_c
