@@ -116,6 +116,18 @@ class NDB_Breadcrumb extends PEAR
             return null;
         }
 
+        if (!empty($this->_parameters['candID'])
+               && !ctype_digit((string)$this->_parameters['candID'])
+        ) {
+                $this->_parameters['candID'] = null;
+        }
+
+        if (!empty($this->_parameters['sessionID'])
+                && !ctype_digit((string)$this->_parameters['sessionID'])
+        ) {
+                $this->_parameters['sessionID'] = null;
+        }
+
         // create DB object
         $DB =& Database::singleton();
         if (Utility::isErrorX($DB)) {
@@ -123,19 +135,19 @@ class NDB_Breadcrumb extends PEAR
         }
 
         // set the 'instrument list' crumb text
-        if (!empty($_REQUEST['sessionID'])) {
-            $timePoint =& TimePoint::singleton($_REQUEST['sessionID']);
+        if (!empty($this->_parameters['sessionID'])) {
+            $timePoint =& TimePoint::singleton($this->_parameters['sessionID']);
             if (Utility::isErrorX($timePoint)) {
-                return PEAR::raiseError("TimePoint Error (".$_REQUEST['sessionID']."): ".$timePoint->getMessage());
+                return PEAR::raiseError("TimePoint Error (".$this->_parameters['sessionID']."): ".$timePoint->getMessage());
             }
             $this->_userFriendlyNames['instrument_list'] = 'TimePoint '.$timePoint->getVisitLabel().' Details';
         }
 
         // set the 'timepoint list' crumb text
-        if (!empty($_REQUEST['candID'])) {
-            $candidate =& Candidate::singleton($_REQUEST['candID']);
+        if (!empty($this->_parameters['candID'])) {
+            $candidate =& Candidate::singleton($this->_parameters['candID']);
             if (Utility::isErrorX($candidate)) {
-                return PEAR::raiseError("Candidate Error (".$_REQUEST['candID']."): ".$candidate->getMessage());
+                return PEAR::raiseError("Candidate Error (".$this->_parameters['candID']."): ".$candidate->getMessage());
             }
             $this->_userFriendlyNames['timepoint_list'] = 'Candidate Profile '.$candidate->getData('CandID').' / '.$candidate->getData('PSCID');
         }
