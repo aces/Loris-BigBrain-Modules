@@ -171,7 +171,7 @@ text-align: center;
 	 	</center>
  	</div>
 
- 	<form action="{$action}" method="post">
+ 	<form action="{$action|escape:'htmlall':'UTF-8'}" method="post">
  		<input name="username" value="bb_user" type="hidden"/>
  		<input name="password" type="hidden" value="publicpassword"/>
  		<center>
