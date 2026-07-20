@@ -21,7 +21,7 @@
     </div>
 </div>
 
-<form action="{$action}" method="post">
+<form action="{$action|escape:'htmlall':'UTF-8'}" method="post">
     <div class="row">
         <div class="col-xs-12">
             <div class="col-sm-2 col-xs-3 col-sm-offset-2">

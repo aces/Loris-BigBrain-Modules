@@ -24,6 +24,28 @@ require_once 'NDB_Breadcrumb.class.inc';
 $TestName = isset($_REQUEST['test_name']) ? $_REQUEST['test_name'] : 'bigbrain';
 $subtest = isset($_REQUEST['subtest']) ? $_REQUEST['subtest'] : '';
 $release = isset($_REQUEST['release']) ? $_REQUEST['release'] : '2015';
+$candID = isset($_REQUEST['candID']) ? $_REQUEST['candID'] : '';
+$sessionID = isset($_REQUEST['sessionID']) ? $_REQUEST['sessionID'] : '';
+$commentID = isset($_REQUEST['commentID']) ? $_REQUEST['commentID'] : '';
+if (!preg_match('/^[A-Za-z0-9_]+$/', $TestName)) {
+    $TestName = 'bigbrain';
+}
+if (!preg_match('/^[A-Za-z0-9_]*$/', $subtest)) {
+    $subtest = '';
+}
+if (!preg_match('/^[A-Za-z0-9_]*$/', $release)) {
+    $release = '2015';
+}
+if (!ctype_digit((string)$candID)) {
+    $candID = '';
+}
+if (!ctype_digit((string)$sessionID)) {
+    $sessionID = '';
+}
+
+if (!preg_match('/^[A-Za-z0-9]*$/', $commentID)) {
+    $commentID = '';
+}
 // make local instances of objects
 $config =& NDB_Config::singleton();
 
@@ -43,9 +65,9 @@ $tpl_data['currentyear'] = date('Y');
 $tpl_data['test_name'] = $TestName;
 $tpl_data['subtest']   = $subtest;
 $tpl_data['release'] = $release;
-tplFromRequest('candID');
-tplFromRequest('sessionID');
-tplFromRequest('commentID');
+$tpl_data['candID'] = $candID;
+$tpl_data['sessionID'] = $sessionID;
+$tpl_data['commentID'] = $commentID;
 tplFromRequest('dynamictabs');
 
 error_log("HERE         $TestName");
@@ -90,14 +112,14 @@ $timer->setMarker('Drew user information');
 // configure browser args for the mri browser
 // !!! array URL args -- need to correct query in mri_browser to accept candidate data
 $argstring = '';
-if (!empty($_REQUEST['candID'])) {
-    $argstring .= "filter%5BcandID%5D=".$_REQUEST['candID']."&";
+if (!empty($candID)) {
+    $argstring .= "filter%5BcandID%5D=".$candID."&";
 }
 
-if (!empty($_REQUEST['sessionID'])) {
-    $timePoint =& TimePoint::singleton($_REQUEST['sessionID']);
+if (!empty($sessionID)) {
+    $timePoint =& TimePoint::singleton($sessionID);
     if (Utility::isErrorX($timePoint)) {
-        $tpl_data['error_message'][] = "TimePoint Error (".$_REQUEST['sessionID']."): ".$timePoint->getMessage();
+        $tpl_data['error_message'][] = "TimePoint Error (".$sessionID."): ".$timePoint->getMessage();
     } else {
         $argstring .= "filter%5Bm.VisitNo%5D=".$timePoint->getVisitNo()."&";
     }
@@ -134,24 +156,24 @@ if (!empty($TestName)) {
 //--------------------------------------------------
 
 // get candidate data
-if (!empty($_REQUEST['candID'])) {
-    $candidate =& Candidate::singleton($_REQUEST['candID']);
+if (!empty($candID)) {
+    $candidate =& Candidate::singleton($candID);
     if (Utility::isErrorX($candidate)) {
-        $tpl_data['error_message'][] = "Candidate Error (".$_REQUEST['candID']."): ".$candidate->getMessage();
+        $tpl_data['error_message'][] = "Candidate Error (".$candID."): ".$candidate->getMessage();
     } else {
         $tpl_data['candidate'] = $candidate->getData();
     }
 }
 
 // get time point data
-if (!empty($_REQUEST['sessionID'])) {
-    $timePoint =& TimePoint::singleton($_REQUEST['sessionID']);
+if (!empty($sessionID)) {
+    $timePoint =& TimePoint::singleton($sessionID);
     if($config->getSetting("SupplementalSessionStatus")) {
         $tpl_data['SupplementalSessionStatuses'] = true;
     }
     
     if (Utility::isErrorX($timePoint)) {
-        $tpl_data['error_message'][] = "TimePoint Error (".$_REQUEST['sessionID']."): ".$timePoint->getMessage();
+        $tpl_data['error_message'][] = "TimePoint Error (".$sessionID."): ".$timePoint->getMessage();
     } else {
         $tpl_data['timePoint'] = $timePoint->getData();
     }
