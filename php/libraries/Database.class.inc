@@ -812,7 +812,7 @@ error_log(" ");
      *
      * @return string surrounded by backticks and with special characters escaped.
      */
-    function escape(string $tableName)
+    function escape($tableName)
     {
         //with help from
         // http://php.net/manual/en/function.mysql-real-escape-string.php
