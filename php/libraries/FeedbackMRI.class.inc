@@ -46,27 +46,6 @@ class FeedbackMRI
     }
 
     /**
-     * clears all predefined comments from the object (used prior to re-setting the list of predefined comments)
-     *
-     * @return bool    if operation succeeded
-     * @access public
-     */
-    function clearPredefinedComments()
-    {
-        // start the query
-        $query = "DELETE FROM feedback_mri_comments WHERE ".$this->_buildWhere();
-
-        // limit to predefined comments
-        $query .= "AND PredefinedCommentID IS NOT NULL";
-
-        // run the query
-        $success = mysql_query($query);
-        
-        // return success
-        return $success;
-    }
-
-    /**
      * clears all comments from the object
      *
      * @return void
@@ -154,9 +133,15 @@ class FeedbackMRI
         }
 
         // start building the query
-        $query = "SELECT CommentTypeID, PredefinedCommentID, Comment FROM feedback_mri_comments WHERE ".$this->_buildWhere();
+        $query = "SELECT CommentTypeID, PredefinedCommentID, Comment FROM feedback_mri_comments";
 
-        $DB->select($query, $result);
+        if ($this->objectType == 'volume') {
+            $query .= " WHERE FileID=:FileID";
+        } else {
+            $query .= " WHERE SessionID=:SessionID";
+        }
+        
+        $result = $DB->pselect($query, $this->_buildWhereAssoc());
         if (Utility::isErrorX($result)) {
             return PEAR::raiseError("DB Error: ".$result->getMessage());
         }
@@ -437,25 +422,6 @@ class FeedbackMRI
         }
 
         return true;
-    }
-
-    /**
-     * constructs an appropriate where expression to limit selects to the current object
-     *
-     * @return string  $where                  where string to limit selects to current object
-     * @access private
-     */
-    function _buildWhere()
-    {
-        // build the where depending on object and subject type
-        if ($this->objectType == 'volume') {
-            // per-volume
-            $where .= "FileID='$this->fileID'";
-        } else {
-            // per-visit
-            $where .= "SessionID='$this->sessionID'";
-        }
-        return $where;
     }
 
     /**
